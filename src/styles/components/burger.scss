@@ -44,6 +44,7 @@
         z-index: 100;
         background: linear-gradient(rgba($colorBlue, 0.2), rgba($colorPurple, 0.2));
         backdrop-filter: blur(10px);
+        border: inset rgba($colorBlue, 1);
       }
       .nav__list {
         display: flex;
@@ -69,17 +70,18 @@
         top: -2px;
       }
       &:hover {
-        background: linear-gradient(rgba($colorBlue, 0.3), rgba($colorPurple, 0.3));
+        background: linear-gradient(rgba($colorBlue, 0.9), rgba($colorPurple, 0.9));
+        color: $primary;
       }
     }
     .dropdown-language {
-        width: 100%;
-        margin-inline-start: 25px;
+      width: 100%;
+      margin-inline-start: 25px;
     }
     .btn-language {
-        width: 60px;
-        height: 30px;
-        padding: 4px;
+      width: 60px;
+      height: 30px;
+      padding: 4px;
     }
   }
 }
