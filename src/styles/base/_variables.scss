@@ -46,3 +46,52 @@
   }
 }
 
+//FONTS
+
+//MANROPE
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+// PROXIMA NOVA
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../../fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../../fonts/ProximaNova-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// COLORS
+$backgroundBody: #1d1f21;
+$primary: #fcffff;
+$secondary: #c8d2dc;
+$colorBlue: #68c9ff;
+$colorPurple: #D1B5FF;
+$backgroundLanguage : #212426;
+$backgroundFigure:#7E51FF;
+$backgroundFigure2:#86A8FF;
+$backgroundFigureMob:#3626EA;
+
+
+
+// FONT-WEIGHT
+$fontRegular: 400;
+$fontBold: 700;

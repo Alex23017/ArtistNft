@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../../fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../../fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  padding-inline: 15px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  -webkit-padding-before: 7px;
+          padding-block-start: 7px;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #c8d2dc;
+  -webkit-padding-before: 4px;
+          padding-block-start: 4px;
+}
+.nav__logo {
+  width: 161px;
+  height: 30px;
+}
+.nav__items {
+  padding-block: 8px;
+  padding-inline: 12px;
+  letter-spacing: -0.35px;
+  white-space: nowrap;
+}
+.nav__items:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.1)), to(rgba(209, 181, 255, 0.1)));
+  background: linear-gradient(rgba(104, 201, 255, 0.1), rgba(209, 181, 255, 0.1));
+  border-radius: 12px;
+}
+.nav .nft__link-lock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.nav .icon-lock {
+  max-width: 14px;
+  max-height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+}
+.nav .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -webkit-margin-start: 52px;
+          margin-inline-start: 52px;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+}
+.nav .btn-language {
+  background-color: #212426;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-block: 8px;
+  -webkit-margin-before: 2px;
+          margin-block-start: 2px;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+  width: 74px;
+}
+.nav .btn-language::after {
+  -webkit-margin-start: 4px;
+          margin-inline-start: 4px;
+}
+.nav .premium {
+  background: -webkit-gradient(linear, left top, right top, from(#68c9ff), to(#d1b5ff));
+  background: linear-gradient(90deg, #68c9ff, #d1b5ff);
+  border-radius: 12px;
+  padding-block: 14px;
+  padding-inline: 22px;
+}
+.nav .premium__link {
+  color: #1d1f21;
+}
+.nav .authorization {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.1)), to(rgba(209, 181, 255, 0.1)));
+  background: linear-gradient(rgba(104, 201, 255, 0.1), rgba(209, 181, 255, 0.1));
+  border-radius: 12px;
+  padding-block: 14px;
+  padding-inline: 22px;
+}
+.nav .authorization__link {
+  background: -webkit-gradient(linear, left top, right top, from(#68c9ff), to(#D1B5FF));
+  background: linear-gradient(90deg, #68c9ff, #D1B5FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-padding-before: 16px;
+            padding-block-start: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .nav .profile, .nav__list {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

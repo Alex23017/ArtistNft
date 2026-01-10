@@ -5,11 +5,11 @@
   "insertPragma": false,
   "jsxBracketSameLine": false,
   "jsxSingleQuote": true,
-  "printWidth": 120,
+  "printWidth": 100,
   "proseWrap": "always",
   "quoteProps": "as-needed",
   "requirePragma": false,
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
@@ -21,7 +21,7 @@
     {
       "files": ["*.html"],
       "options": {
-        "parser": "go-template"
+        "parser": "html"
       }
     }
   ]

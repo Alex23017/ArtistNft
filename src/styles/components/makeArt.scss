@@ -1,0 +1,32 @@
+@use '../base/_variables.scss' as *;
+
+@media (max-width: 1370px) {
+  .makeart {
+    top: 110px;
+    left: inherit;
+    right: 10px;
+    p {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .makeart {
+    top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .makeart {
+    width: 246px;
+    position: absolute;
+    top: 62px;
+    margin-inline-start: 97px;
+    right: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    p {
+      margin-inline-start: 58px;
+    }
+  }
+}

@@ -1,10 +1,10 @@
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/js/dist/dropdown'
-import '../styles/base/main.scss'
+import 'bootstrap/js/dist/dropdown'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/base/reset.scss'
+import '../styles/tailwind.css'
+import '../styles/base/main.scss'
 
 const components = import.meta.glob('./components/*.js')
-
 
 document.querySelectorAll('[data-component]').forEach(el => {
   const name = el.dataset.component
@@ -20,15 +20,12 @@ document.querySelectorAll('[data-component]').forEach(el => {
   }
 })
 
-// PRELOAD
-
 // window.addEventListener('load', () => {
 //   const preload = document.querySelector('.preload')
 //   if (preload) {
 //     setTimeout(() => {
-//       preload.classList.remove('loading')
 //       document.body.classList.remove('loading')
+//       preload.remove()
 //     }, 500)
 //   }
 // })
-

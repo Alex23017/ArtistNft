@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../../fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../../fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+#burger {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+  -webkit-margin-end: -4px;
+          margin-inline-end: -4px;
+}
+#burger .burger__icon {
+  position: relative;
+  z-index: 999;
+  width: 32px;
+  height: 32px;
+  padding-block: 9px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+#burger .burger__icon:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.5)), to(rgba(209, 181, 255, 0.5)));
+  background: linear-gradient(rgba(104, 201, 255, 0.5), rgba(209, 181, 255, 0.5));
+}
+#burger .premium__icon {
+  width: 32px;
+  height: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.1)), to(rgba(209, 181, 255, 0.1)));
+  background: linear-gradient(rgba(104, 201, 255, 0.1), rgba(209, 181, 255, 0.1));
+  border-radius: 9px;
+  padding: 8.5px;
+  cursor: pointer;
+}
+#burger .premium__icon:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.5)), to(rgba(209, 181, 255, 0.5)));
+  background: linear-gradient(rgba(104, 201, 255, 0.5), rgba(209, 181, 255, 0.5));
+}
+
+@media (max-width: 600px) {
+  #burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #burger .burger__menu {
+    display: none;
+  }
+  #burger .burger__menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.2)), to(rgba(209, 181, 255, 0.2)));
+    background: linear-gradient(rgba(104, 201, 255, 0.2), rgba(209, 181, 255, 0.2));
+    backdrop-filter: blur(10px);
+  }
+  #burger .burger__menu .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-padding-before: 60px;
+            padding-block-start: 60px;
+    -webkit-padding-after: 10px;
+            padding-block-end: 10px;
+    width: 100%;
+  }
+  #burger .nav__items {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  #burger .nav__items::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.1)), to(rgba(209, 181, 255, 0.1)));
+    background: linear-gradient(rgba(104, 201, 255, 0.1), rgba(209, 181, 255, 0.1));
+    top: -2px;
+  }
+  #burger .nav__items:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(104, 201, 255, 0.3)), to(rgba(209, 181, 255, 0.3)));
+    background: linear-gradient(rgba(104, 201, 255, 0.3), rgba(209, 181, 255, 0.3));
+  }
+  #burger .dropdown-language {
+    width: 100%;
+    -webkit-margin-start: 25px;
+            margin-inline-start: 25px;
+  }
+  #burger .btn-language {
+    width: 60px;
+    height: 30px;
+    padding: 4px;
+  }
+}/*# sourceMappingURL=burger.css.map */
