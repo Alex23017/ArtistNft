@@ -1,17 +1,15 @@
-import { defineConfig } from 'vite'
-import path from 'path'
-import handlebars from 'vite-plugin-handlebars'
-import svgSpritePlugin from '@pivanov/vite-plugin-svg-sprite'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import { hulakPlugins } from 'vite-plugin-hulak-tools'
+import { defineConfig } from 'vite';
+import path from 'path';
+import handlebars from 'vite-plugin-handlebars';
+import svgSpritePlugin from '@pivanov/vite-plugin-svg-sprite';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import { hulakPlugins } from 'vite-plugin-hulak-tools';
 
-const partialDirs = [
-  path.resolve(__dirname, 'src/html/components'),
-]
+const partialDirs = [path.resolve(__dirname, 'src/html/components')];
 
 export default defineConfig({
   root: 'src',
-  // base: '/ArtistNft/',
+  // base: '/ClubTravel/',
   appType: 'mpa',
   plugins: [
     hulakPlugins({
@@ -40,12 +38,12 @@ export default defineConfig({
     {
       name: 'hmr-hbs-partials',
       configureServer(server) {
-        server.watcher.add(partialDirs)
+        server.watcher.add(partialDirs);
         server.watcher.on('change', file => {
           if (partialDirs.some(dir => file.startsWith(dir))) {
-            server.ws.send({ type: 'full-reload' })
+            server.ws.send({ type: 'full-reload' });
           }
-        })
+        });
       },
     },
   ],
@@ -61,17 +59,16 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'src/index.html'),
-        // page: path.resolve(__dirname, 'src/html/pages/test.html'),
-    
+        arts: path.resolve(__dirname, 'src/html/pages/arts.html'),
       },
       output: {
         entryFileNames: 'js/[name].js',
         chunkFileNames: 'js/[name].js',
         assetFileNames: ({ name }) => {
-          if (name && name.endsWith('.css')) return 'css/[name].css'
-          return 'assets/[name][extname]'
+          if (name && name.endsWith('.css')) return 'css/[name].css';
+          return 'assets/[name][extname]';
         },
       },
     },
   },
-})
+});

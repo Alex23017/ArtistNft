@@ -1,0 +1,39 @@
+<div
+  class="homenft__slide swiper-slide min-w-[350px] brightness-[0.3] [&.swiper-slide-active]:brightness-[1] transition-all duration-[400ms] ease-in-out [&.swiper-slide-next]:brightness-[1] [&.swiper-slide-prev]:brightness-[1]"
+>
+  <div class="homenft__card rounded-[12px] max-w-[350px]">
+    <p
+      class="homenft__caption pt-[17px] tracking-[1.5px] font-bold text-[18px] mt-[17px] ml-[20px] mb-[18px]"
+    >
+      NFT
+    </p>
+    <div class="homenft__background h-[350px] {{background}} relative overflow-hidden">
+      <img
+        src="{{img}}"
+        alt="imgCard"
+        class="homenft__img max-w-[350px] max-h-[380px] w-full px-[48px] py-[28px]"
+      />
+      <div
+        class="homenft__circle-first absolute w-[372px] h-[372px] rounded-full top-[154px] -left-[11px]"
+      ></div>
+      <div
+        class="homenft__circle-second absolute w-[464px] h-[463px] rounded-full top-[79px] -left-[57px]"
+      ></div>
+    </div>
+    <p class="homenft__caption homenft__caption--none">NFT</p>
+    <h3 class="homenft__title px-[24px] font-bold text-[20px] leading-[30px] mt-[16px]">
+      {{title}}
+    </h3>
+    <p class="homenft__info px-[24px] mt-[2px] text-[14px] leading-[21px]">{{info}}</p>
+    <div
+      class="homenft__items relative whitespace-nowrap px-[24px] pb-[17px] flex items-center justify-between mt-[34px]"
+    >
+      <p class="homenft__price text-[26px] font-bold leading-[33.5px]">${{price}}</p>
+      <div
+        class="homenft__item inline-flex rounded-[12px] py-[14px] px-[30px] w-[116px] h-[48px] -mr-[3px]"
+      >
+        <a href="" class="homenft__link text-[14px] leading-[20px] font-bold">Buy now</a>
+      </div>
+    </div>
+  </div>
+</div>

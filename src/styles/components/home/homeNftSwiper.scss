@@ -1,0 +1,222 @@
+@use '../../base/variables' as *;
+// CARD-BACKGROUND FROM STRAPI
+
+.homenft__card-green {
+  background-color: $green;
+}
+.homenft__card-purple {
+  background-color: $backgroundFigure;
+}
+.homenft__card-blue {
+  background-color: $backgroundFigure2;
+}
+
+//CARD
+.homenft__caption--none {
+  display: none;
+}
+.homenft__card {
+  background-color: $backgroundCardHomeNft;
+}
+
+.homenft__caption {
+  background: linear-gradient(90deg, $colorBlue, $colorPurple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homenft__link {
+  color: $backgroundBody;
+}
+.homenft__title,
+.homenft__info,
+.homenft__price {
+  color: $primary;
+}
+.homenft__item {
+  background: linear-gradient(90deg, $colorBlue, $colorPurple);
+}
+
+.homenft__items {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $primary;
+    opacity: 0.1;
+  }
+}
+
+.mySwiperHomeNft .swiper-slide-active {
+  transform: translateY(-31px);
+}
+
+.homenft__decor-left {
+  background-color: $backgroundFigure;
+}
+.homenft__decor-right {
+  background-color: $backgroundFigureMob;
+}
+.homenft__circle-first {
+  background: linear-gradient(rgba($black, 0.1));
+  -webkit-mask: radial-gradient(circle, transparent 140px, #000 64px);
+  mask: radial-gradient(circle, transparent 140px, #000000 64px);
+}
+.homenft__circle-second {
+  background: linear-gradient(rgba($black, 0.1));
+  -webkit-mask: radial-gradient(circle, transparent 205px, #000 64px);
+  mask: radial-gradient(circle, transparent 205px, #000000 64px);
+}
+.homenft__container {
+}
+.homenft__body {
+  overflow: hidden;
+}
+
+@media (max-width: 1420px) {
+  .homenft__container {
+    margin-block-start: 0px;
+  }
+
+  .mySwiperHomeNft .homenft__slide {
+    filter: brightness(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  }
+  .mySwiperHomeNft .swiper-slide-active {
+    transform: translate(0px);
+  }
+  .homenft__container {
+    padding-inline: 15px;
+  }
+  .homenft__decor-left {
+    height: 250px;
+  }
+  .homenft__decor-right {
+    height: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mySwiperHomeNft .homenft__slide {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .homenft__background {
+    max-height: 253px;
+  }
+  .homenft__caption {
+    display: none;
+  }
+  .homenft__background {
+    max-width: 253px;
+    margin-inline-start: 14px;
+    margin-block-start: 13px;
+    border-radius: 12px;
+  }
+  .homenft__img {
+    max-width: 183px;
+    max-height: 234px;
+    padding: 0px;
+    top: 20px;
+  }
+  .homenft__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-block-start: 2px;
+  }
+  .homenft__info {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .homenft__price {
+    font-size: 22px;
+    line-height: 33.5px;
+  }
+  .homenft__item {
+    height: 40px;
+    width: 96px;
+    padding-block: 10px;
+    padding-inline: 20px;
+  }
+  .homenft__title,
+  .homenft__info,
+  .homenft__items {
+    padding-inline-start: 14px;
+    padding-inline-end: 19px;
+  }
+  .homenft__decor-left {
+    height: 0px;
+  }
+  .homenft__decor-right {
+    height: 0px;
+  }
+
+  .homenft__wrapper {
+    margin-inline-start: -21px;
+  }
+  .homenft__card {
+    min-width: 280px;
+  }
+  .homenft__img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .homenft__container {
+    padding-block-start: 26px;
+    margin-block-end: 0px;
+  }
+  .homenft__circle-first {
+    width: 268px;
+    height: 268px;
+    top: 111px;
+    left: -8px;
+    -webkit-mask: radial-gradient(circle, transparent 101px, #000 64px);
+    mask: radial-gradient(circle, transparent 101px, #000000 64px);
+  }
+  .homenft__circle-second {
+    width: 335px;
+    height: 335px;
+    top: 57px;
+    left: -40px;
+    -webkit-mask: radial-gradient(circle, transparent 148px, #000 64px);
+    mask: radial-gradient(circle, transparent 148px, #000000 64px);
+  }
+  .homenft__caption--none {
+    display: flex;
+    font-size: 14px;
+    max-width: 29px;
+    margin-block-start: 12px;
+    margin-inline-start: 14px;
+    margin-block-end: 0px;
+    letter-spacing: 1.5px;
+  }
+  .homenft__items {
+    margin-block-start: 24px;
+    padding-inline-end: 21px;
+    &::before {
+      top: -12px;
+      margin-inline-start: 12px;
+      width: 89%;
+    }
+  }
+  .homenft__item {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 380px) {
+  .homenft__container {
+    padding-block-end: 0px;
+  }
+}
+@media (max-width: 340px) {
+  .homenft__wrapper {
+    margin-inline-start: -70px;
+  }
+}

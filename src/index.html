@@ -6,16 +6,17 @@
     <title>Главная</title>
     <meta name="description" content="{{page.description}}" />
     <link rel="icon" href="./img/header/favicon.png" type="png" />
-    <link rel="stylesheet" href="./styles/components/preload.scss" />
+    <link rel="stylesheet" href="./styles/components/base/preload.scss" />
     <!-- <link rel="preload" as="image" href="./img/header/heroSlider.webp" /> -->
     <link rel="preconnect" href="https://your-strapi.cloud" crossorigin />
   </head>
   <body class="">
-    <!-- {{>Preload}} -->
+    {{>base/Preload}}
     <div class="wrapper">
-      {{>Header}}
+    
       <main class="main">
-        {{>MakeArt}} {{>MainHero}} {{>NotWar}} {{>Biography}} {{>GetPremium}}
+        {{>home/MakeArt}}  {{>home/NotWar}} {{>home/HomeNftSwiper}}
+         {{>base/Footer}}
       </main>
     </div>
     <script type="module" src="./js/main.js"></script>

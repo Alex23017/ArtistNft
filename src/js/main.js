@@ -1,31 +1,45 @@
-import 'bootstrap/js/dist/dropdown'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/base/reset.scss'
-import '../styles/tailwind.css'
-import '../styles/base/main.scss'
+import 'bootstrap/js/dist/dropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/base/reset.scss';
+import '../styles/tailwind.css';
+import '../styles/base/main.scss';
 
-const components = import.meta.glob('./components/*.js')
+import '../i18n';
+import { initLangSwitcher } from '../i18n/langSwitcher';
+import { updateContent } from '../i18n/updateContent';
 
-document.querySelectorAll('[data-component]').forEach(el => {
-  const name = el.dataset.component
-  if (!name) return
+// загрузка компонентів
 
-  const importPath = `./components/${name}.js`
-  if (components[importPath]) {
-    components[importPath]().catch(err => {
-      console.warn(`Ошибка загрузки компонента ${name}:`, err)
-    })
-  } else {
-    console.warn(`Компонент ${name}.js не найден`)
+const modules = import.meta.glob('./components/**/*.js');
+
+document.querySelectorAll('[data-component]').forEach(async el => {
+  const name = el.dataset.component;
+  const match = Object.keys(modules).find(path => path.endsWith(`/${name}.js`));
+  if (!match) {
+    console.warn(`Компонент "${name}" не знайдено`);
+    return;
   }
-})
+  try {
+    await modules[match]();
+  } catch (err) {
+    console.error(`помилка завантаження компонента ${name}:`, err);
+  }
+});
 
-// window.addEventListener('load', () => {
-//   const preload = document.querySelector('.preload')
-//   if (preload) {
-//     setTimeout(() => {
-//       document.body.classList.remove('loading')
-//       preload.remove()
-//     }, 500)
-//   }
-// })
+// прелоадер
+
+window.addEventListener('load', () => {
+  const preload = document.querySelector('.preload');
+  if (preload) {
+    setTimeout(() => {
+      document.body.classList.remove('loading');
+      preload.remove();
+    }, 500);
+  }
+});
+
+// i18n мова
+document.addEventListener('DOMContentLoaded', () => {
+  updateContent();
+  initLangSwitcher();
+});

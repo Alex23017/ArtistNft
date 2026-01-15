@@ -7,6 +7,7 @@ body {
   align-items: center;
   width: 100%;
   background-color: $backgroundBody;
+
   position: relative;
   &.open,
   &.loading {
@@ -15,6 +16,21 @@ body {
 }
 .wrapper {
   width: 100%;
-  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+@media (min-width: 1540px) {
+  .biography__container,
+  .mainhero__container,
+  .getpremium__container,
+  .skeleton__container,
+  .artshero__container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+  .homenft__slide {
+    max-width: 550px;
+  }
+}

@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 // export async function getResource(url) {
 //   const jwt = localStorage.getItem('jwt')
@@ -43,14 +43,14 @@ export async function getPublicResource(url) {
         'Content-Type': 'application/json',
       },
       validateStatus: status => status < 500,
-    })
+    });
     if (res.status === 404) {
-      return null
+      return null;
     }
-    return res.data
+    return res.data;
   } catch (error) {
-    const status = error.response?.status || 'NO_STATUS'
-    throw new Error(`Could not fetch ${url}, status: ${status}`)
+    const status = error.response?.status || 'NO_STATUS';
+    throw new Error(`Could not fetch ${url}, status: ${status}`);
   }
 }
 
@@ -58,10 +58,11 @@ export async function postPublicResource(url, data = {}) {
   try {
     const res = await axios.post(url, data, {
       headers: { 'Content-Type': 'application/json' },
-    })
-    return res.data
+    });
+    return res.data;
   } catch (error) {
-    console.error(error.response?.data || error.message)
-    return null
+    console.error(error.response?.data || error.message);
+    return null;
   }
 }
+

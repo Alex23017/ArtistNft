@@ -1,0 +1,60 @@
+<header class="header" data-component="header">
+  <nav class="nav">
+    {{>base/Burger}}
+    <a href="/index.html">
+      <svg class="icon nav__logo">
+        <use href="#icon-logo"></use>
+      </svg>
+    </a>
+    <ul class="nav__list">
+      <li class="nav__items">
+        <a href="/index.html" class="nav__link" data-i18n="header.nav.main"></a>
+      </li>
+      <li class="nav__items">
+        <a href="" class="nav__link nft__link-lock">
+          <svg class="icon icon-lock">
+            <use href="#icon-lock"></use>
+          </svg>
+          NFT
+        </a>
+      </li>
+
+      <li class="nav__items">
+        <a href="/html/pages/arts.html" class="nav__link" data-i18n="header.nav.pictures"></a>
+      </li>
+      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.auction"></a></li>
+      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.pricing"></a></li>
+      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.contacts"></a></li>
+      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.blog"></a></li>
+    </ul>
+    <div class="profile">
+      <div class="dropdown dropdown-language">
+        <button
+          class="btn btn-language btn-primary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          data-i18n="header.lang.current"
+        >
+          ENG
+        </button>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item dropdown-language-item" data-language="en" href="#">ENG</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item dropdown-language-item" data-language="uk" href="#">UA</a>
+          </li>
+        </ul>
+      </div>
+      <div class="authorization">
+        <a class="authorization__link" data-i18n="header.auth.login" href=""></a>
+      </div>
+      <div class="premium">
+        <a class="premium__link" href="" data-i18n="header.auth.premium"></a>
+      </div>
+    </div>
+  </nav>
+</header>

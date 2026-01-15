@@ -1,0 +1,87 @@
+@use '../../base/variables' as *;
+#burger {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  margin-inline-end: -4px;
+  .burger__icon {
+    position: relative;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    padding-block: 9px;
+    cursor: pointer;
+    border-radius: 9px;
+    &:hover {
+      background: linear-gradient(rgba($colorBlue, 0.5), rgba($colorPurple, 0.5));
+    }
+  }
+  .premium__icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(rgba($colorBlue, 0.1), rgba($colorPurple, 0.1));
+    border-radius: 9px;
+    padding: 8.5px;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(rgba($colorBlue, 0.5), rgba($colorPurple, 0.5));
+    }
+  }
+}
+
+@include phone {
+  #burger {
+    display: flex;
+    .burger__menu {
+      display: none;
+      &.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        background: linear-gradient(rgba($colorBlue, 0.2), rgba($colorPurple, 0.2));
+        backdrop-filter: blur(10px);
+        border: inset rgba($colorBlue, 1);
+      }
+      .nav__list {
+        display: flex;
+
+        flex-direction: column;
+        padding-block-start: 60px;
+        padding-block-end: 10px;
+        width: 100%;
+      }
+    }
+    .nav__items {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(rgba($colorBlue, 0.1), rgba($colorPurple, 0.1));
+        top: -2px;
+      }
+      &:hover {
+        background: linear-gradient(rgba($colorBlue, 0.9), rgba($colorPurple, 0.9));
+        color: $primary;
+      }
+    }
+    .dropdown-language {
+      width: 100%;
+      margin-inline-start: 25px;
+    }
+    .btn-language {
+      width: 60px;
+      height: 30px;
+      padding: 4px;
+    }
+  }
+}
