@@ -1,6 +1,3 @@
-if (document.querySelector('[data-component="skeleton"]')) {
-  import('/styles/components/base/skeleton.scss');
-}
 const skeleton = document.querySelector('.skeleton');
 const container = document.querySelector('.skeleton__container');
 const homeNftContainer = document.querySelector('.homenft__container ');
@@ -9,17 +6,17 @@ function renderSkeletonCard(count) {
   let cardSkeleton = '';
   for (let i = 0; i < count; i++) {
     cardSkeleton += `
-    <div class="SKELETON__CARD gap-[50px] skeleton__slide rounded-lg
+    <div class="SKELETON__CARD max-lg:h-[320px] max-lg:w-[250px] gap-[50px] skeleton__slide rounded-lg
      bg-slate-400 w-[350px]">
-      <div class="skeleton__header h-[45px] bg-slate-700 rounded-t-lg"></div>
-      <div class="skeleton__main relative bg-slate-400 h-[250px]">
+      <div class="skeleton__header max-lg:h-[25px] h-[45px] bg-slate-700 rounded-t-lg"></div>
+      <div class="skeleton__main max-lg:after:left-[40%] after:relative after:block after:content-[''] after:shadow-[0px_0px_14px_3px_#68c9ff] after:border-4 after:w-[60px] after:h-[60px] after:border-t-transparent after:rounded-[50%] border-t-ui-colorBlue after:border-r-ui-primary after:border-b-ui-secondary after:border-l-ui-colorPurple after:animate-spin after:left-[45%] after:top-[40%] relative bg-slate-400 h-[250px]">
       <p class=" font-proxima text-[24px] flex justify-center w-full font-thin text-white absolute bottom-10">404 Not Found</p>
       <p class=" font-proxima text-[12px] flex justify-center w-full font-thin text-white absolute bottom-7">( сервер не відповідає )</p>
       </div>
-      <div class="skeleton__footer bg-slate-700 h-[200px] rounded-b-lg flex flex-col">
+      <div class="skeleton__footer max-lg:h-[100px] bg-slate-700 h-[200px] rounded-b-lg flex flex-col">
          <div class="skeleton__footer-title ml-[10px] bg-slate-400  h-[35px] mt-[20px] max-w-[200px] rounded-md"></div>
          <div class="skeleton__footer-info bg-slate-400  h-[100px] mt-[10px] mx-[20px] rounded-md"></div>
-         <div class="skeleton__info flex justify-between gap-[10px] items-center mx-[20px] mt-[20px] pb-[20px]">
+         <div class="skeleton__info max-lg:mt-0 flex justify-between gap-[10px] items-center mx-[20px] mt-[20px] pb-[20px]">
          <div class="skeleton__footer-left bg-slate-400 w-[150px]  h-[50px]  rounded-md"></div>
          <div class="skeleton__footer-right bg-slate-400 w-[100px]  h-[50px] rounded-md"></div>
       </div>

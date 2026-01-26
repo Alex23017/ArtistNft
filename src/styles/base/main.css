@@ -26,6 +26,10 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,5 +54,33 @@ body.open, body.loading {
 
 .wrapper {
   width: 100%;
-  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1540px) {
+  .biography__container,
+  .mainhero__container,
+  .getpremium__container,
+  .skeleton__container,
+  .artshero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 150px;
+  }
+  .homenft__slide {
+    max-width: 550px;
+  }
 }/*# sourceMappingURL=main.css.map */

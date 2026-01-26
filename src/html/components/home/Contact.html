@@ -1,48 +1,61 @@
 <div
-  class="contact__container pt-[86px] z-20 relative flex items-center justify-center font-proxima"
+  class="contact__container max-sm:pt-[34px] max-sm:overflow-hidden pt-[86px] z-20 relative flex items-center justify-center font-proxima"
   data-component="contact"
 >
   <img
-    class="contact__cube -z-10 absolute right-0 blur-[4px] top-[126px]"
+    class="contact__cube max-lg:hidden -z-10 absolute right-0 blur-[4px] top-[126px]"
     src="../../img/home/contactCube.png"
     alt="cube"
+    data-speed="0.7"
   />
   <img
     class="contact__bluesmall absolute -z-10 left-[215px] bottom-[14px]"
     src="../../img/home/contact.BlueSmall.png"
     alt="bluesmall"
+     data-speed="0.6"
   />
   <img
-    class="img contact__blue absolute -z-10 left-[159px] top-[221px] blur-[4px]"
+    class="img contact__blue max-sm:blur-[2px] max-sm:-right-[30px] max-sm:left-[inherit] max-sm:top-[3px] max-sm:h-[95px] max-sm:w-[95px] absolute -z-10 left-[159px] top-[221px] blur-[4px]"
     src="../../img/home/contactBlue.png"
     alt="blue"
+     data-speed="0.5"
   />
   <img
-    class="img contact__purple absolute -z-10 left-[0px] top-[290px]"
+    class="img contact__purple max-sm:hidden absolute -z-10 left-[0px] top-[290px]"
     src="../../img/home/contactPurple.png"
     alt="purple"
+     data-speed="0.4"
   />
   <img
-    class="img contact__purple--small hidden absolute -z-10 right-[50px] top-[16px]"
+    class="img contact__purple--small max-sm:flex hidden absolute -z-10 right-[50px] top-[16px]"
     src="../../img/home/conactPurpleSmall.png"
     alt="purpleSmall"
+     data-speed="0.6"
   />
 
   <div class="contact__body max-w-[540px]">
-    <div class="contact__header flex flex-col items-center text-center">
+    <div
+    data-speed="0.95"
+      class="contact__header max-[376px]:ml-[00px] max-[376px]:items-start flex flex-col items-center text-center"
+    >
       <p
-        class="contact__header-caption tracking-[1.8px] ml-[1px] mb-[1px] text-[18px] font-bold leading-[26.5px] max-w-[140px] text-center"
+        class="contact__header-caption [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:text-[14px] max-sm:leading-[26.5px] max-sm:tracking-[1.4px] max-sm:ml-0 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple tracking-[1.8px] ml-[1px] mb-[1px] text-[18px] font-bold leading-[26.5px] max-w-[140px] text-center"
         data-i18n="contact.caption"
       ></p>
       <h2
-        class="contact__header-title text-[36px] font-bold leading-[49.5px] max-w-[540px] text-center"
+        class="contact__header-title [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[376px]:max-w-[300px] max-[376px]:!text-start max-sm:text-[26px] max-sm:leading-[34px] max-sm:items-center max-sm:max-w-full max-sm:-mt-[1px] text-ui-primary text-[36px] font-bold leading-[49.5px] max-w-[540px] text-center"
         data-i18n="contact.title"
       ></h2>
     </div>
-    <div class="contact__main px-[65px] mt-[22px]">
-      <form action="" class="contact__form flex flex-col">
+    <div
+      class="contact__main max-[376px]:px-[0px] max-sm:px-[10px] max-sm:mt-[0px] max-sm:mt-o max-lg:px-[15px] px-[65px] mt-[22px]"
+    >
+      <form
+        action=""
+        class="contact__form max-[350px]:w-[300px] max-[376px]:w-[344px] flex flex-col"
+      >
         <label
-          class="text-[14px] leading-[21px] mt-[15px]"
+          class="text-ui-secondary max-sm:-ml-[1px] text-[14px] leading-[21px] mt-[15px] [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)]"
           for="username"
           data-i18n="contact.labelName"
         ></label>
@@ -50,12 +63,12 @@
           name="username"
           id="username"
           type="text"
-          class="contact__username pl-[32px] pb-[2px] text-[16px] leading-[21px] h-[64px] rounded-[9px] mt-[7px]"
+          class="contact__username max-sm:pb-[3px] max-sm:pl-[31px] bg-ui-backgroundLanguage text-ui-primary pl-[32px] pb-[2px] text-[16px] leading-[21px] h-[64px] rounded-[9px] mt-[7px]"
           placeholder="Your name"
           data-i18n="contact.inputName"
         />
         <label
-          class="text-[14px] leading-[21px] mt-[15px]"
+          class="text-ui-secondary max-sm:-ml-[1px] text-[14px] leading-[21px] mt-[15px] [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)]"
           for="email"
           data-i18n="contact.labelMail"
         ></label>
@@ -63,40 +76,44 @@
           name="email"
           id="email"
           type="email"
-          class="contact__email text-[16px] leading-[21px] h-[64px] rounded-[9px] mt-[7px] pl-[32px] pb-[2px]"
+          class="contact__email max-sm:pb-[3px] max-sm:pl-[31px] bg-ui-backgroundLanguage text-ui-primary text-[16px] leading-[21px] h-[64px] rounded-[9px] mt-[7px] pl-[32px] pb-[2px]"
           placeholder="Your mail"
           data-i18n="contact.inputMail"
         />
         <label
-          class="text-[14px] leading-[21px] mt-[15px]"
+          class="text-ui-secondary max-sm:-ml-[1px] text-[14px] leading-[21px] mt-[15px] [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)]"
           for="question"
           data-i18n="contact.labelQuestion"
-          ></label
-        >
+        ></label>
         <textarea
           name="question"
           id="question"
           rows="4"
-          class="contact__question h-[182px] pl-[32px] pt-[20px] rounded-[9px] w-full block px-[20px] py-[15px] text-[16px] leading-[21px] mt-[7px] resize-none"
+          class="contact__question max-sm:pl-[31px] max-sm:pt-[20px] bg-ui-backgroundLanguage text-ui-primary h-[182px] pl-[32px] pt-[20px] rounded-[9px] w-full block px-[20px] py-[15px] text-[16px] leading-[21px] mt-[7px] resize-none"
           placeholder="Your question"
           data-i18n="contact.inputQuestion"
         ></textarea>
 
         <button
-          class="contact__button mt-[14px] whitespace-nowrap rounded-[16px] font-semibold py-[19px] px-[145px] text-[18px] leading-[26.5px]"
+          class="contact__button max-sm:w-full max-sm:px-0 bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple mt-[14px] whitespace-nowrap rounded-[16px] font-semibold py-[19px] px-[145px] text-[18px] leading-[26.5px]"
           type="submit"
           data-i18n="contact.checkbox"
         ></button>
         <p
           class="contact__check-error text-center text-[14px] mt-[10px] text-red-600 uppercase"
         ></p>
-        <div class="contact__check mt-[8px] flex items-center gap-[10px]">
+        <div
+          class="contact__check max-sm:gap-[8px] max-sm:mt-[5px] mt-[8px] flex items-center gap-[10px]"
+        >
           <input
             name="policy"
             type="checkbox"
-            class="contact__check-input appearance-none min-w-[20px] min-h-[20px] rounded-[7px] border checked:bg-orange-500 checked:border-transparent transition-all cursor-pointer relative peer"
+            class="contact__check-input max-sm:!pl-0 max-sm:max-w-[20px] bg-ui-backgroundLanguage text-ui-primary appearance-none min-w-[20px] min-h-[20px] rounded-[7px] border checked:bg-orange-500 checked:border-transparent transition-all cursor-pointer relative peer"
           />
-          <p class="contact__check-text text-[14px] leading-[21px]" data-i18n="contact.privacy"></p>
+          <p
+            class="contact__check-text max-sm:pb-[3px] max-sm:pl-[2px] text-ui-primary text-[14px] leading-[21px]"
+            data-i18n="contact.privacy"
+          ></p>
         </div>
       </form>
     </div>

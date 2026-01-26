@@ -1,42 +1,59 @@
 <div
-  class="getpremium__container px-[150px] font-proxima"
+  class="getpremium__container max-sm:relative max-sm:mt-[30px] max-lg:px-[15px] text-ui-primary px-[150px] font-proxima"
   data-component="getPremium"
 >
-  <div class="getpremium__decor-mob flex-none  w-[320px] h-[500px] absolute right-0 top-[150px] blur-[140px]"></div>
-  <div class="getpremium__decor-mob--second flex-none w-[250px] h-[500px] absolute left-0 top-[80px] blur-[140px]"></div>
-  <div class="getpremium__background z-20 flex relative w-full max-w-[1140px] h-[446px] rounded-[24px]">
+  <div
+    class="getpremium__decor-mob max-sm:bg-ui-backgroundFigureMob flex-none w-[320px] h-[500px] absolute right-0 top-[150px] blur-[140px]"
+  ></div>
+  <div
+    class="getpremium__decor-mob--second max-sm:bg-ui-backgroundBiography2 max-lg:-z-10 flex-none w-[250px] h-[500px] absolute left-0 top-[80px] blur-[140px]"
+  ></div>
+  <div
+    class="getpremium__background max-lg:gap-[27px] max-xl:flex-col max-xl:h-[514px] bg-gradient-to-r from-ui-backgroundPremiumBlue/100 via-ui-backgroundPremiumBlue2/100 to-ui-backgroundFigure/100 z-20 flex relative w-full max-w-[1140px] h-[446px] rounded-[24px]"
+  >
     <div
-      class="getpremium___column getpremium___column--first max-w-[444px] flex flex-col gap-[12px] ml-[110px] mt-[83px]"
+      class="getpremium___column getpremium___column--first max-sm:gap-[0px] max-sm:w-full max-sm:max-w-full max-sm:px-[26px] max-sm:ml-[0px] max-lg:mt-[32px] max-w-[444px] flex flex-col gap-[12px] ml-[110px] mt-[83px]"
     >
-      <svg class="icon getpremium__crown w-[45px] h-[45px]">
+      <svg class="icon getpremium__crown max-lg:w-[24px] max-lg:h-[24px] w-[45px] h-[45px]">
         <use href="#icon-crownWhite"></use>
       </svg>
-      <h2 class="getpremium__title whitespace-nowrap font-bold text-[36px] mt-[3px]" data-i18n="getPremium.title"></h2>
-      <p class="getpremium__text text-[16px] leading-7 mt-[4px]" data-i18n="getPremium.text">
-    
-      </p>
-      <div class="getpremium__items inline-flex px-[37px] py-[19px] rounded-2xl max-w-[167px]">
-        <a href="" class="getpremium__link whitespace-nowrap font-bold text-[18px]" data-i18n="getPremium.plan"></a>
+      <h2
+        class="getpremium__title max-sm:mt-[5px] max-lg:text-[26px] max-lg:leading-[34px] whitespace-nowrap font-bold text-[36px] mt-[3px]"
+        data-i18n="getPremium.title"
+      ></h2>
+      <p
+        class="getpremium__text max-sm:mt-[8px] max-lg:text-[15px] max-lg:leading-[24px] text-[16px] leading-7 mt-[4px]"
+        data-i18n="getPremium.text"
+      ></p>
+      <div
+        class="getpremium__items max-sm:mt-[23px] max-sm:rounded-[12px] max-lg:justify-center max-lg:w-[135px] max-lg:h-[52px] max-lg:pt-[14px] max-lg:py-[12px] max-lg:px-[10px] bg-ui-backgroundBody inline-flex px-[37px] py-[19px] rounded-2xl max-w-[167px]"
+      >
+        <a
+          href=""
+          class="getpremium__link max-sm:pt-[2px] max-lg:text-[15px] [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple whitespace-nowrap font-bold text-[18px]"
+          data-i18n="getPremium.plan"
+        ></a>
       </div>
     </div>
     <div class="getpremium___column relative h-full w-full overflow-hidden rounded-3xl">
       <div
-        class="getpremium___column-decor absolute w-[512px] h-[512px] rounded-full -right-[165px] -top-[21px]"
+        class="getpremium___column-decor get-premium-decor max-lg:get-premium-decor-tablet max-sm:get-premium-decor-mob max-[380px]:top-[40px] max-[380px]:-left-[8%] max-[550px]:left-[10%] max-sm:left-[15%] max-sm:top-[40px] max-sm:bg-[linear-gradient(60deg,#7c3aed,rgba(255,255,255,0.418),#7c3aed)] max-xl:bg-[linear-gradient(20deg,#7c3aed,rgba(255,255,255,0.418),#7c3aed)] max-xl:left-[30%] max-xl:-translate-[50%] max-xl:top-0 max-xl:w-[399px] max-xl:h-[399px] bg-[linear-gradient(7deg,#7c3aed,rgba(255,255,255,0.418),#7c3aed)] absolute w-[512px] h-[512px] rounded-full -right-[165px] -top-[21px]"
       ></div>
+
       <img
         src="../../img/home/purple.png"
         alt="purple"
-        class="getpremium__figure-purple absolute blur-[3px] left-[148px]"
+        class="getpremium__figure-purple max-[340px]:w-[100px] max-sm:bottom-[10px] max-sm:h-[102px] max-sm:-left-[62px] max-xl:w-[147px] max-xl:h-[95px] max-xl:rotate-[40deg] max-xl:-left-[50px] max-xl:bottom-0 absolute blur-[3px] left-[148px]"
       />
       <img
         src="../../img/home/green.png"
         alt="green"
-        class="getpremium__figure-green absolute left-[140px] top-[87px]"
+        class="getpremium__figure-green  max-[380px]:left-[16.5%] max-sm:-top-[14px] max-sm:w-[230px] max-sm:-rotate-[8deg] max-sm:h-[180px] max-sm:left-[30%] max-sm:-translate-[50%] max-lg:left-[42%] max-xl:-top-[20px] max-xl:w-[207px] max-xl:h-[149px] max-xl:left-[40%] max-xl:-translate-[50%] max-xl:-rotate-[8deg] absolute left-[140px] top-[87px]"
       />
       <img
         src="../../img/home/pink.png"
         alt="pink"
-        class="getpremium__figure-pink absolute blur-[6px] right-[0px] bottom-[0px]"
+        class="getpremium__figure-pink max-[340px]:w-[100px] max-sm:w-[135px] max-sm:-right-[25px] max-sm:h-[120px] max-xl:w-[133px] max-xl:h-[93px] max-xl:-right-[30px] absolute blur-[6px] right-[0px] bottom-[0px]"
       />
     </div>
   </div>

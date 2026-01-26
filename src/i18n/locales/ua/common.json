@@ -44,7 +44,7 @@
     "labelQuestion": "Ваше запитання",
     "inputQuestion": "Ваше запитання",
     "checkbox": "Надіслати запит",
-    "privacy": "Я погоджуюсь з <span> Політикою конфіденційності</span> та <span>Умовами користування</span>"
+    "privacy": "Я погоджуюсь з <span class='max-[400px]:mr-[7px] font-semibold mr-[9px] ml-[8px] -tracking-[0.1] max-[400px]:m-0 underline text-ui-backgroundFigure2'> Політикою конфіденційності</span> та <span class='max-[400px]:ml-[7px] font-semibold mr-[9px] ml-[8px] -tracking-[0.1] underline text-ui-backgroundFigure2'>Умовами користування</span>"
   },
   "footer": {
     "privacy": "Політика конфіденційності",
@@ -57,5 +57,16 @@
       "text": "Готові отримати безкоштовний та якісний принт на ваш одяг купленого НФТ?",
       "button": "Отримати рішення"
     }
+  },
+  "ArtsContact": {
+    "caption": "КАСТОМІЗУЙ ВЛАСНИЙ ОДЯГ",
+    "title": "Бажаєте зробити собі власний?",
+    "labelType": "Тип речі",
+    "labelSize": "Розмір",
+    "labelColor": "Колір",
+    "labelComment": "Ваш коментар",
+    "inputComment": "Коментар",
+    "checkbox": "Надіслати запит",
+    "privacy": "Я погоджуюсь з <span class='max-[400px]:mr-[7px] font-semibold mr-[9px] ml-[8px] -tracking-[0.1] max-[400px]:m-0 underline text-ui-backgroundFigure2'> Політикою конфіденційності</span> та <span class='max-[400px]:ml-[7px] font-semibold mr-[9px] ml-[8px] -tracking-[0.1] underline text-ui-backgroundFigure2'>Умовами користування</span>"
   }
 }

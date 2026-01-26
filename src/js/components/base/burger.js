@@ -1,6 +1,3 @@
-if (document.querySelector('[data-component="burger"]')) {
-  import('/styles/components/base/burger.scss');
-}
 
 const burger = document.getElementById('burger');
 const menuBurger = document.querySelector('.burger__menu');

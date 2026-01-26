@@ -1,4 +1,7 @@
 @use '../base/_variables.scss' as *;
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;

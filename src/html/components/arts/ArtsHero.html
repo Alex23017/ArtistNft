@@ -1,77 +1,86 @@
 <div
-  class="artshero__container flex gap-[8px] justify-center px-[167px] mt-[31px]"
+  class="artshero__container max-sm:gap-[32px] max-lg:px-[15px] max-lg:gap-[25px] max-xl:flex-col max-xl:items-center max-xl:gap-[50px] flex gap-[8px] justify-center px-[167px] mt-[31px]"
   data-component="artsHero"
 >
   <div
-    class="artshero__figure absolute w-[758px] h-[550px] flex top-[150px] -left-[480px] blur-[150px] opacity-85 rounded-3xl -z-10"
+    class="artshero__figure max-[400px]:top-[300px] max-[400px]:h-[250px] max-[400px]:w-[100px] max-[400px]:left-[inherit] max-[400px]:right-0 max-[400px]:blur-[60px] max-[400px]:rounded-[inherit] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundPremiumPurple bg-gradient-to-b from-ui-backgroundFigure to-ui-backgroundFigure2 top-[360px] h-[380px] absolute w-[758px] flex -left-[480px] blur-[150px] opacity-85 rounded-3xl -z-10"
   ></div>
   <div
-    class="artshero__decor-mob--second flex-none w-[250px] h-[500px] absolute left-0 top-[80px] blur-[140px]"
+    class="artshero__decor-mob--second max-[400px]:flex max-[400px]:w-[300px] max-[400px]:h-300px max-[400px]:top-[320px] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundFigureMobArts max-[400px]:blut-[120px] top-[250px] -z-[10] bg-gradient-to-b from-ui-backgroundFigure/60 to-ui-backgroundFigure2/40 flex-none w-[250px] h-[500px] absolute left-0 blur-[140px]"
   ></div>
-  <div class="artshero__column artshero__column-title max-w-[475px] flex flex-col mt-[132px]">
- 
+  <div
+    data-speed="1"
+    class="artshero__column artshero__column-title max-[400px]:justify-start max-[400px]:items-start max-sm:justify-center max-sm:items-center max-sm:mt-[28px] max-sm:w-full max-w-[475px] flex flex-col mt-[132px]"
+  >
     <div
-      class="artshero__figure-mob absolute w-[100px] h-[200px] flex top-[200px] right-[10px] blur-[60px] opacity-85 -z-10"
+      class="artshero__figure-mob max-[400px]:w-[250px] max-[400px]:top-[300px] max-[400px]:h-[300px] max-[400px]:right-[10px] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundFigure2/30 max-[400px]:to-ui-backgroundFigure2/80 absolute w-[100px] h-[200px] flex top-[200px] right-[10px] blur-[60px] opacity-85 -z-10"
     ></div>
 
     <h1
-      class="artshero__title text-[64px] font-bold font-proxima mt-[19px] mb-[16px] leading-[65px]"
+      class="artshero__title [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:max-w-[260px] max-sm:mb-[8px] max-sm:text-[36px] max-sm:leading-[40px] text-ui-primary text-[64px] font-bold font-proxima mt-[19px] mb-[16px] leading-[65px]"
       data-i18n="Arts.Hero.title"
+      data-speed="1.1"
     ></h1>
     <p
-      class="artshero__text text-1xl font-proxima max-w-[271px] mb-[40px] leading-[28px]"
+      class="artshero__text max-sm:mb-[22px] max-sm:text-[15px] max-sm:leading-[24px] text-ui-primary text-1xl font-proxima max-w-[271px] mb-[40px] leading-[28px]"
       data-i18n="Arts.Hero.text"
+      data-speed="1.1"
     ></p>
-    <div class="artshero__items flex items-center gap-[12px]">
+    <div class="artshero__items flex items-center gap-[12px]" data-speed="1.1">
       <div
-        class="artshero__premium-body premium__body flex items-center rounded-2xl px-[22px] py-[18.5px] gap-2"
+        class="artshero__premium-body max-sm:py-[13.2px] max-sm:pl-[28px] max-sm:pr-[29px] max-sm:rounded-[12px] premium__body bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple flex items-center rounded-2xl px-[22px] py-[18.5px] gap-2"
       >
-        <svg class="icon artshero__premium__icon w-6 h-6">
+        <svg class="icon artshero__premium__icon max-sm:w-[18px] max-sm:h-[18px] w-6 h-6">
           <use href="#icon-bagArts"></use>
         </svg>
         <a
           href=""
           data-i18n="Arts.Hero.button"
-          class="artshero__premium-link -mt-[1px] flex items-center text-[18px] font-proxima font-bold"
+          class="artshero__premium-link max-sm:text-[15px] max-sm:leading-[26.5px] text-ui-backgroundBody -mt-[1px] flex items-center text-[18px] font-proxima font-bold"
         >
         </a>
       </div>
     </div>
   </div>
 
-  <div class="artshero__column artshero__column-img w-full h-[500px]">
-    <div class="artshero__body relative right-[0px]">
+  <div
+    data-speed="1"
+    class="artshero__column artshero__column-img max-[400px]:h-[340px] 2xl:max-w-[600px] w-full h-[500px]"
+  >
+    <div
+      class="artshero__body max-sm:-left-[3px] max-xl:flex max-xl:justify-center max-xl:items-center relative right-[0px]"
+    >
       <img
         loading="lazy"
         src="../../../img/arts/bg.webp"
         alt="home"
-        class="artshero__background-img absolute"
+        class="artshero__background-img max-sm:min-w-[369px] max-sm:hidden absolute -z-10"
       />
       <img
         loading="lazy"
         src="../../../img/arts/bgMob.webp"
         alt="home"
-        class="artshero__background-img--mob hidden absolute top-0"
+        class="artshero__background-img--mob max-sm:flex hidden absolute top-0"
       />
 
       <img
         loading="lazy"
         src="../../../img/arts/clothes.webp"
         alt="hero"
-        class="artshero__hero-img object-cover absolute left-[64px] top-[39px]"
+        class="artshero__hero-img max-sm:left-[21px] max-[340px]:left-[1.5%] max-sm:max-w-[309px] max-sm:min-w-[309px] max-lg:left-[0px] max-lg:top-[23px] max-lg:rounded-[22px] max-lg:relative max-xl:static max-xl:top-0 z-[99] object-cover absolute left-[64px] top-[39px]"
       />
 
-      <svg class="arts__circle w-[25px] h-[25px] absolute -left-[16px] top-[453px]">
+      <svg class="arts__circle max-xl:hidden w-[25px] h-[25px] absolute -left-[16px] top-[453px]">
         <use href="#icon-circle"></use>
       </svg>
 
       <svg
-        class="arts__bigstars w-[46px] h-[62px] absolute -left-[10px] rotate-[11deg] top-[357px]"
+        class="arts__bigstars max-sm:w-[30px] max-sm:h-[41px] max-sm:-left-[12px] max-sm:rotate-[inherit] max-sm:top-0 w-[46px] h-[62px] absolute -left-[10px] rotate-[11deg] top-[357px]"
       >
         <use href="#icon-stars"></use>
       </svg>
       <svg
-        class="arts__smallstars w-[36px] h-[48px] absolute rotate-[-15deg] -right-[56px] top-[220px]"
+        class="arts__smallstars max-sm:rotate-[inherit] max-sm:-top-[7px] max-sm:right-[19px] max-lg:right-[inherit] w-[36px] h-[48px] absolute rotate-[-15deg] -right-[56px] top-[220px]"
       >
         <use href="#icon-stars"></use>
       </svg>

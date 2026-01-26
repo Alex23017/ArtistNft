@@ -1,38 +1,58 @@
 <div
-  class="homenft__slide swiper-slide min-w-[350px] brightness-[0.3] [&.swiper-slide-active]:brightness-[1] transition-all duration-[400ms] ease-in-out [&.swiper-slide-next]:brightness-[1] [&.swiper-slide-prev]:brightness-[1]"
+  class="homenft__slide max-xl:mr-[56px] max-lg:min-w-[250px] max-lg:max-w-[250px] max-xl:[&.swiper-slide-active]:!translate-y-[0px] max-xl:flex max-xl:justify-center max-xl:items-center max-xl:place-items-center max-xl:brightness-[1] swiper-slide transform [&.swiper-slide-active]:!-translate-y-[31px] min-w-[350px] brightness-[0.3] [&.swiper-slide-active]:brightness-[1] transition-all duration-[400ms] ease-in-out [&.swiper-slide-next]:brightness-[1] [&.swiper-slide-prev]:brightness-[1]"
 >
-  <div class="homenft__card rounded-[12px] max-w-[350px]">
+  <div
+    class="homenft__card max-lg:pt-[13px] max-lg:min-w-[280px] bg-ui-backgroundCardHomeNft rounded-[12px] max-w-[350px]"
+  >
     <p
-      class="homenft__caption pt-[17px] tracking-[1.5px] font-bold text-[18px] mt-[17px] ml-[20px] mb-[18px]"
+      class="homenft__caption max-lg:hidden [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple pt-[17px] tracking-[1.5px] font-bold text-[18px] mt-[17px] ml-[20px] mb-[18px]"
     >
       NFT
     </p>
-    <div class="homenft__background h-[350px] {{background}} relative overflow-hidden">
+    <div
+      class="homenft__background bg-ui-{{background}} max-lg:max-w-[253px] max-lg:ml-[14px] max-lg:rounded-[12px]  max-lg:max-h-[253px] h-[350px]  relative overflow-hidden"
+    >
       <img
         src="{{img}}"
         alt="imgCard"
-        class="homenft__img max-w-[350px] max-h-[380px] w-full px-[48px] py-[28px]"
+        class="homenft__img max-lg:absolute max-lg:-translate-x-1/2 max-lg:left-[50%] max-lg:-translate-[50%] max-lg:max-w-[183px] max-lg:max-h-[234px] max-lg:p-0 max-lg:top-[20px] max-w-[350px] max-h-[380px] w-full px-[48px] py-[28px]"
       />
       <div
-        class="homenft__circle-first absolute w-[372px] h-[372px] rounded-full top-[154px] -left-[11px]"
+        class="homenft__circle-first mask-circle-first max-lg:mask-circle-first-mob max-lg:w-[268px] max-lg:h-[268px] max-lg:top-[111px] max-lg:-left-[8px] bg-gradient-to-b bg-ui-backgroundLanguage/10 absolute w-[372px] h-[372px] rounded-full top-[154px] -left-[11px]"
       ></div>
       <div
-        class="homenft__circle-second absolute w-[464px] h-[463px] rounded-full top-[79px] -left-[57px]"
+        class="homenft__circle-second mask-circle-second max-lg:mask-circle-second-mob  max-lg:w-[335px] max-lg:h-[335px] max-lg:top-[57px] max-lg:-left-[40px] bg-gradient-to-b bg-ui-backgroundLanguage/10 absolute w-[464px] h-[463px] rounded-full top-[79px] -left-[57px]"
       ></div>
     </div>
-    <p class="homenft__caption homenft__caption--none">NFT</p>
-    <h3 class="homenft__title px-[24px] font-bold text-[20px] leading-[30px] mt-[16px]">
+    <p
+      class="homenft__caption max-lg:flex max-lg:text-[14px] max-lg:max-w-[29px] max-lg:mt-[12px] max-lg:ml-[14px] max-lg:mb-[0px] max-lg:tracking-[1.5px] [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple homenft__caption--none hidden"
+    >
+      NFT
+    </p>
+    <h3
+      class="homenft__title max-lg:pl-[14px] max-lg:pr-[19px] max-lg:text-[18px] max-lg:leading-[26px] max-lg:mt-[2px] text-ui-primary px-[24px] font-bold text-[20px] leading-[30px] mt-[16px]"
+    >
       {{title}}
     </h3>
-    <p class="homenft__info px-[24px] mt-[2px] text-[14px] leading-[21px]">{{info}}</p>
-    <div
-      class="homenft__items relative whitespace-nowrap px-[24px] pb-[17px] flex items-center justify-between mt-[34px]"
+    <p
+      class="homenft__info max-lg:pl-[14px] max-lg:pr-[19px] max-lg:text-[12px] max-lg:leading-[20px] text-ui-primary px-[24px] mt-[2px] text-[14px] leading-[21px]"
     >
-      <p class="homenft__price text-[26px] font-bold leading-[33.5px]">${{price}}</p>
-      <div
-        class="homenft__item inline-flex rounded-[12px] py-[14px] px-[30px] w-[116px] h-[48px] -mr-[3px]"
+      {{info}}
+    </p>
+    <div
+      class="homenft__items max-lg:before:-top-[12px] max-lg:before:ml-[12px] max-lg:before:w-[89%] max-lg:mt-[24px] max-lg:pr-[21px] max-lg:pl-[14px] before:content-[''] before:absolute before:-top-[15px] before:left-0 before:h-[1px] before:w-full before:bg-ui-primary before:opacity-10 relative whitespace-nowrap px-[24px] pb-[17px] flex items-center justify-between mt-[34px]"
+    >
+      <p
+        class="homenft__price max-lg:text-[22px] max-lg:leading-[33.5px] text-ui-primary text-[26px] font-bold leading-[33.5px]"
       >
-        <a href="" class="homenft__link text-[14px] leading-[20px] font-bold">Buy now</a>
+        ${{price}}
+      </p>
+      <div
+        class="homenft__item max-lg:rounded-[8px] max-lg:h-[40px] max-lg:w-[96px] max-lg:py-[10px] max-lg:px-[20px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple inline-flex rounded-[12px] py-[14px] px-[30px] w-[116px] h-[48px] -mr-[3px]"
+      >
+        <a href="" class="homenft__link text-ui-backgroundBody text-[14px] leading-[20px] font-bold"
+          >Buy now</a
+        >
       </div>
     </div>
   </div>

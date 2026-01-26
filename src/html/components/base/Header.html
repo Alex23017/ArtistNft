@@ -1,36 +1,66 @@
-<header class="header" data-component="header">
-  <nav class="nav">
+<header
+  data-component="header"
+  class="header [.wrapper-auction_&]:mt-[6px] [.wrapper-auction_&]:max-sm:mt-[12px] px-[15px] mt-[5px]"
+>
+  <nav
+    class="nav [.wrapper-auction_&]:pt-[4px] max-sm:justify-between max-sm:flex-row-reverse max-sm:pt-[16px] max-sm:gap-[20px] pt-[7px] flex gap-[14px] justify-center items-center text-[14px]"
+  >
     {{>base/Burger}}
+
     <a href="/index.html">
-      <svg class="icon nav__logo">
+      <svg class="icon nav__logo w-[161px] h-[30px]">
         <use href="#icon-logo"></use>
       </svg>
     </a>
-    <ul class="nav__list">
-      <li class="nav__items">
+    <ul
+      class="nav__list max-sm:hidden whitespace-nowrap text-ui-secondary flex items-center gap-[2px] font-manrope pt-[4px]"
+    >
+      <li
+        class="nav__items nav__items-main  [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] py-[8px] px-[12px]"
+      >
         <a href="/index.html" class="nav__link" data-i18n="header.nav.main"></a>
       </li>
-      <li class="nav__items">
-        <a href="" class="nav__link nft__link-lock">
-          <svg class="icon icon-lock">
+      <li
+        class="nav__items nav__items-nft [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link nft__link-lock flex items-center gap-[8px]">
+          <svg class="icon icon-lock w-[14px] h-[14px]">
             <use href="#icon-lock"></use>
           </svg>
           NFT
         </a>
       </li>
 
-      <li class="nav__items">
+      <li
+        class="nav__items nav__items-arts [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
         <a href="/html/pages/arts.html" class="nav__link" data-i18n="header.nav.pictures"></a>
       </li>
-      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.auction"></a></li>
-      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.pricing"></a></li>
-      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.contacts"></a></li>
-      <li class="nav__items"><a href="" class="nav__link" data-i18n="header.nav.blog"></a></li>
+      <li
+        class="nav__items nav__items-auction [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="/html/pages/auction.html" class="nav__link" data-i18n="header.nav.auction"></a>
+      </li>
+      <li
+        class="nav__items nav__items-pricing [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link" data-i18n="header.nav.pricing"></a>
+      </li>
+      <li
+        class="nav__items nav__items-contacts [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link" data-i18n="header.nav.contacts"></a>
+      </li>
+      <li
+        class="nav__items nav__items-blog [&.active]:rounded-lg [&.active]:py-[8px] [&.active]:px-[12px] [&.active]:bg-gradient-to-b [&.active]:to-ui-colorPurple/10 [&.active]:from-ui-colorBlue/10 py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link" data-i18n="header.nav.blog"></a>
+      </li>
     </ul>
-    <div class="profile">
+    <div class="profile max-sm:hidden flex items-center gap-[8px] ml-[52px] font-proxima font-bold">
       <div class="dropdown dropdown-language">
         <button
-          class="btn btn-language btn-primary dropdown-toggle"
+          class="btn text-[14px] pb-[8px] mt-[2px] pl-[5px] w-[74px] font-manrope border-none bg-ui-backgroundLanguage btn-language btn-primary dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -49,10 +79,18 @@
           </li>
         </ul>
       </div>
-      <div class="authorization">
-        <a class="authorization__link" data-i18n="header.auth.login" href=""></a>
+      <div
+        class="authorization py-[14px] px-[22px] rounded-[12px] bg-gradient-to-r from-ui-colorBlue/10 to-ui-colorPurple/10"
+      >
+        <a
+          class="authorization__link [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple"
+          data-i18n="header.auth.login"
+          href=""
+        ></a>
       </div>
-      <div class="premium">
+      <div
+        class="premium bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple rounded-[12px] py-[14px] px-[22px]"
+      >
         <a class="premium__link" href="" data-i18n="header.auth.premium"></a>
       </div>
     </div>

@@ -1,83 +1,105 @@
 <div
-  class="biography__container mb-[97px] flex font-proxima mt-[104px] gap-[87px] pl-[173px] pr-[185px]"
+  class="biography__container max-[400px]:gap-[23px] max-sm:mt-[60px] max-sm:items-center max-sm:justify-center max-sm:px-[15px] max-sm:mb-[6px] max-xl:px-[20px] max-[1320px]:gap-[120px] max-xl:flex-col max-xl:items-center max-xl:gap-[35px] mb-[97px] flex font-proxima mt-[104px] gap-[87px] pl-[173px] pr-[185px]"
   data-component="biography"
 >
-  <div class="biography__column biography__column-first relative">
+  <div
+    data-speed="1.2"
+    class="biography__column text-ui-primary biography__column-first relative max-sm:w-full max-sm:text-center"
+  >
     <p
-      class="biography__caption--mob text-lg font-bold max-w-[142px] tracking-widest relative z-10"
+      class="biography__caption--mob [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[400px]:p-[inherit] max-sm:text-[14px] max-sm:w-[100%] max-sm:pl-[50px] max-xl:flex [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] bg-gradient-to-r from-ui-colorBlue/100 to-ui-colorPurple hidden text-lg font-bold max-w-[142px] tracking-widest relative z-10"
       data-i18n="biography.caption"
     ></p>
     <h2
-      class="biography__title--mob text-4xl font-bold mb-[40px] mt-[20px] relative z-10"
+      class="biography__title--mob [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[400px]:mt-[0px] max-[400px]:mb-[27px] max-[400px]:p-[inherit] max-sm:text-[26px] max-sm:leading-[34px] max-sm:w-full max-sm:max-w-full max-sm:pl-[50px] max-xl:flex hidden text-4xl font-bold mb-[40px] mt-[20px] relative z-10"
       data-i18n="biography.title"
     ></h2>
 
     <div
-      class="biography__background absolute w-[448px] h-[589px] rounded-[24px] rotate-[-4deg]"
+      class="biography__background max-[400px]:left-[5%] max-sm:w-[255px] max-sm:h-[336px] max-sm:left-[25%] max-sm:-translate-[50%] max-sm:-rotate-[4deg] max-lg:w-full max-lg:h-full max-lg:max-w-[350px] max-lg:max-h-[450px] bg-gradient-to-r from-ui-colorBlue/100 to-ui-colorPurple absolute w-[448px] h-[589px] rounded-[24px] rotate-[-4deg]"
     ></div>
     <div
-      class="biography__column-bright flex absolute w-[510px] h-[589px] rounded-[24px] blur-[160px] -left-[60px] top-10"
+      class="biography__column-bright max-sm:blur-[60px] max-sm:bg-ui-backgroundFigureMob/100 max-sm:top-[20px] max-sm:h-[340px] max-sm:max-w-[100px] max-sm:left-[inherit] max-sm:right-[0px] max-lg:max-w-[400px] bg-gradient-to-b from-ui-backgroundBiography/100 to-ui-backgroundFigureMob/100 flex absolute w-[510px] h-[589px] rounded-[24px] blur-[160px] -left-[60px] top-10"
     ></div>
     <div
-      class="biography__column-bright--third flex absolute w-[100px] h-[100px] rounded-[24px] rotate-[-4deg] blur-[160px] -left-[80px] top-[240px]"
+      class="biography__column-bright--mob max-sm:flex hidden max-sm:blur-[60px] max-sm:bg-ui-backgroundFigureMob/100 max-sm:top-[20px] max-sm:h-[340px] max-sm:max-w-[100px] max-sm:left-[inherit] max-sm:right-[140px] max-lg:max-w-[400px] bg-gradient-to-b from-ui-backgroundBiography/50 to-ui-backgroundFigureMob/50 absolute w-[510px] h-[589px] rounded-[24px] blur-[160px] -left-[60px] top-10"
     ></div>
     <div
-      class="biography__column-bright--second flex absolute w-[100px] h-[100px] rounded-[24px] blur-[75px] -left-[60px] bottom-[10px]"
+      class="biography__column-bright--third max-sm:left-[inherit] max-sm:right-[0px] max-sm:top-[100px] max-sm:h-[200px] max-sm:bg-ui-primary/100 z-[5] bg-ui-primary/100 flex absolute w-[100px] h-[100px] rounded-[24px] rotate-[-4deg] blur-[160px] -left-[80px] top-[240px]"
+    ></div>
+    <div
+      class="biography__column-bright--second max-sm:right-[20px] max-sm:left-[inherit] max-sm:w-[200px] max-sm:opacity-30 max-sm:-bottom-[50px] bg-ui-backgroundBiographySecond/100 flex absolute w-[100px] h-[100px] rounded-[24px] blur-[75px] -left-[60px] bottom-[10px]"
     ></div>
 
     <img
-      class="biography__hero relative min-w-min h-[570px] top-[14px] left-[22px] z-10"
+      class="biography__hero max-sm:w-[254px] max-[400px]:left-[13.7%] max-sm:h-[326px] max-sm:left-[27%] max-sm:rotate-[3deg] max-sm:top-[12px] max-sm:rounded-[24px] max-sm:-translate-[50%] max-lg:w-full max-lg:h-full max-lg:max-w-[350px] max-lg:max-h-[440px] relative min-w-min h-[570px] top-[14px] left-[22px] z-10"
       src="../../img/home/biography.webp"
       alt="biography"
     />
 
-    <svg class="icon__circle-bio w-[25px] h-[25px] absolute -left-[71px] top-[304px]">
+    <svg class="icon__circle-bio max-lg:hidden w-[25px] h-[25px] absolute -left-[71px] top-[304px]">
       <use href="#icon-circle"></use>
     </svg>
 
-    <svg class="icon__smallstars-bio w-[46px] h-[62px] absolute -left-[96px] top-[138px]">
+    <svg
+      class="icon__smallstars-bio max-lg:hidden w-[46px] h-[62px] absolute -left-[96px] top-[138px]"
+    >
       <use href="#icon-stars"></use>
     </svg>
   </div>
-  <div class="biography__column biography__column-second mt-[30px]">
+  <div
+    data-speed="1.2"
+    class="biography__column max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col text-ui-primary biography__column-second mt-[30px]"
+  >
     <p
-      class="biography__caption text-lg font-bold max-w-[118px] tracking-widest"
+      class="biography__caption [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-xl:hidden [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] bg-gradient-to-r from-ui-colorBlue/100 to-ui-colorPurple text-lg font-bold max-w-[118px] tracking-widest"
       data-i18n="biography.caption"
     ></p>
     <h2
-      class="biography__title text-4xl font-bold mb-[22px] mt-[4px]"
+      class="biography__title [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)]  max-xl:hidden text-4xl font-bold mb-[22px] mt-[4px]"
       data-i18n="biography.title"
     ></h2>
     <p
-      class="biography__text max-w-[550px] text-base leading-[28px]"
+      class="biography__text [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:z-10 max-sm:relative max-sm:max-w-[345px] max-sm:leading-[24px] max-sm:text-[15px] max-w-[550px] text-base leading-[28px]"
       data-i18n="biography.text"
     ></p>
-    <div class="biography__footer flex justify-center items-center gap-[35px] mt-[42px] mr-[13px]">
+    <div
+      class="biography__footer max-[360px]:ml-[0px] max-[400px]:gap-[23px] max-[400px]:mr-[0px] max-[400px]:mt-[34px] max-[400px]:-ml-[60px] flex justify-center items-center gap-[35px] mt-[42px] mr-[13px]"
+    >
       <div class="biography__info flex flex-col">
         <p
-          class="biography__info-years mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
+          class="biography__info-years max-[400px]:h-[29px] max-[400px]:pt-[3px] max-[400px]:pl-[13px] max-[400px]:mb-[12px] bg-ui-green/10 text-ui-green mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
         >
           2007
         </p>
-        <p class="biography__info-text max-w-[155px] leading-[28px]" data-i18n="biography.info"></p>
+        <p
+          class="biography__info-text [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[400px]:w-[131px] max-[400px]:text-[14px] max-[400px]:leading-[24px] max-w-[155px] leading-[28px]"
+          data-i18n="biography.info"
+        ></p>
       </div>
       <div class="biography__info flex flex-col">
         <p
-          class="biography__info-years mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
+          class="biography__info-years max-[400px]:mb-[12px] max-[400px]:h-[29px] bg-ui-green/10 text-ui-green mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
         >
           2014
         </p>
-        <p class="biography__info-text max-w-[155px] leading-[28px]" data-i18n="biography.info">
+        <p
+          class="biography__info-text [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[400px]:w-[131px] max-[400px]:text-[14px] max-[400px]:leading-[24px] max-w-[155px] leading-[28px]"
+          data-i18n="biography.info"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
       </div>
-      <div class="biography__info biography__info--none flex flex-col">
+      <div class="biography__info biography__info--none max-[400px]:hidden flex flex-col">
         <p
-          class="biography__info-years mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
+          class="biography__info-years bg-ui-green/10 text-ui-green mb-[10px] text-[14px] w-[60px] h-[32px] rounded-[10px] pt-[4px] pl-[13px]"
         >
           2019
         </p>
-        <p class="biography__info-text max-w-[155px] leading-[28px]" data-i18n="biography.info">
+        <p
+          class="biography__info-text [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-[400px]:w-[131px] max-[400px]:text-[14px] max-[400px]:leading-[24px] max-w-[155px] leading-[28px]"
+          data-i18n="biography.info"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
       </div>

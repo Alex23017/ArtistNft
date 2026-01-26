@@ -1,9 +1,5 @@
 import { postQuestion } from '../../api/service/contact';
 
-if (document.querySelector('[data-component="contact"]')) {
-  import('/styles/components/home/contact.scss');
-}
-
 const contactForm = document.querySelector('.contact__form');
 const btnForm = document.querySelector('.contact__button');
 const checkBox = document.querySelector('.contact__check-input');
@@ -12,6 +8,7 @@ const checkBoxErrorMessage = document.querySelector('.contact__check-error');
 const contactUsername = document.querySelector('.contact__username');
 const contactMail = document.querySelector('.contact__email');
 const contactTextArea = document.querySelector('.contact__question');
+
 
 checkBox.addEventListener('click', () => {
   if (checkBox.checked) {

@@ -6,7 +6,6 @@
     <title>Arts</title>
     <meta name="description" content="{{page.description}}" />
     <link rel="icon" href="./img/header/favicon.png" type="png" />
-    <link rel="stylesheet" href="/styles/components/base/preload.scss" />
     <!-- <link rel="preload" as="image" href="./img/header/heroSlider.webp" /> -->
     <link rel="preconnect" href="https://your-strapi.cloud" crossorigin />
   </head>
@@ -14,10 +13,10 @@
     {{>base/Preload}}
     <div class="wrapper wrapper-arts">
       <main class="main">
-        {{>base/Header}} {{>arts/ArtsHero}} {{>arts/Custom}} {{>arts/Unique}} 
+        {{>base/Header}} {{>arts/ArtsHero}} {{>arts/ContainerCardsArts}} {{>arts/Custom}}
+        {{>arts/Unique}} {{>arts/ArtsContact}}  {{>base/Footer}}
       </main>
     </div>
     <script type="module" src="/js/main.js"></script>
-    <script type="module" src="../../js/pages/arts.js"></script>
   </body>
 </html>

@@ -1,31 +1,67 @@
-<div id="burger" data-component="burger">
-  <svg class="icon premium__icon w-[15px] h-[12px]">
+<div
+  id="burger"
+  class="hidden max-sm:flex items-center gap-[6px] -mr-[4px]"
+  data-component="burger"
+>
+  <svg
+    class="icon premium__icon hover:bg-gradient-to-b hover:from-ui-colorBlue/50 hover:to-ui-colorPurple/50 cursor-pointer p-[8.5px] rounded-[9px] bg-gradient-to-b from-ui-colorBlue/10 to-ui-colorPurple/10 w-[32px] h-[32px]"
+  >
     <use href="#icon-premium"></use>
   </svg>
-  <svg class="icon burger__icon w-[14px] h-[12px]">
+  <svg
+    class="icon hover:bg-gradient-to-b hover:from-ui-colorBlue/50 hover:to-ui-colorPurple/50 burger__icon relative z-[999] w-[32px] h-[32px] py-[9px] cursor-pointer rounded-[9px]"
+  >
     <use href="#icon-menu"></use>
   </svg>
-  <div class="burger__menu">
-    <ul class="nav__list">
-      <li class="nav__items">
+  <div
+    class="burger__menu [&.open]:border-2 [&.open]:border-ui-colorBlue [&.open]:border-inset [&.open]:bg-gradient-to-b [&.open]:from-ui-colorBlue/20 [&.open]:to-ui-colorPurple/20 [&.open]:backdrop-blur-[10px] [&.open]:from-ui-colorBlue/20 to-ui-colorPurple/20 [&.open]:bg-gradient-to-b [&.open]:z-[100] [&.open]:h-auto [&.open]:w-full [&.open]:left-0 [&.open]:top-0 [&.open]:fixed [&.open]:flex max-sm:hidden"
+  >
+    <ul
+      class="nav__list max-sm:w-full max-sm:pb-[10px] max-sm:pt-[60px] max-sm:flex max-sm:flex-col"
+    >
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
         <a href="/index.html" class="nav__link">Main page</a>
       </li>
-      <li class="nav__items">
-        <a href="" class="nav__link nft__link-lock">
-          <svg class="icon icon-lock">
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link nft__link-lock flex items-center gap-[8px]">
+          <svg class="icon icon-lock w-[14px] h-[14px]">
             <use href="#icon-lock"></use>
           </svg>
           NFT
         </a>
       </li>
-      <li class="nav__items"><a href="/html/pages/arts.html" class="nav__link">Pictures</a></li>
-      <li class="nav__items"><a href="" class="nav__link">Auction</a></li>
-      <li class="nav__items"><a href="" class="nav__link">Pricing</a></li>
-      <li class="nav__items"><a href="" class="nav__link">Contacts</a></li>
-      <li class="nav__items"><a href="" class="nav__link">Blog</a></li>
-      <div class="dropdown dropdown-language">
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="/html/pages/arts.html" class="nav__link">Pictures</a>
+      </li>
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="/html/pages/auction.html" class="nav__link">Auction</a>
+      </li>
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link">Pricing</a>
+      </li>
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90 max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link">Contacts</a>
+      </li>
+      <li
+        class="nav__items max-sm:hover:text-ui-primary max-sm:hover:bg-gradient-to-r max-sm:hover:from-ui-colorBlue/90 max-sm:hover:to-ui-colorPurple/90  max-sm:justify-center max-sm:before:content-[''] max-sm:before:absolute max-sm:before:w-full max-sm:before:h-[2px] max-sm:before:bg-gradient-to-r max-sm:before:from-ui-colorBlue/20 max-sm:before:to-ui-colorPurple/20 max-sm:before:-top-[2px] max-sm:relative max-sm:flex max-sm:items-center max-sm:w-full max-sm:cursor-pointer text-ui-secondary py-[8px] hover:rounded-lg hover:bg-gradient-to-b hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 -tracking-[0.35px] px-[12px]"
+      >
+        <a href="" class="nav__link">Blog</a>
+      </li>
+      <div class="dropdown dropdown-language max-sm:w-full max-sm:ml-[25px]">
         <button
-          class="btn btn-language btn-primary dropdown-toggle"
+          class="btn btn-language max-sm:border-none max-sm:bg-ui-backgroundLanguage max-sm:w-[60px] max-sm:h-[30px] max-sm:p-[4px] btn-primary dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arts_cards",
+  "info": {
+    "singularName": "arts-card",
+    "pluralName": "arts-cards",
+    "displayName": "ArtsCard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "bigSize": {
+      "type": "boolean"
+    }
+  }
+}

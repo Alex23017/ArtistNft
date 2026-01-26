@@ -1,55 +1,73 @@
 <div
-  class="mainhero__container relative flex gap-y-[77px] items-center justify-between px-[165px] mt-[88px]"
+  class="mainhero__container  max-sm:justify-center max-sm:items-center max-sm:px-[15px] max-xl:flex-col 2xl:justify-center relative flex gap-y-[77px] items-center justify-between px-[165px] mt-[88px]"
   data-component="mainHero"
 >
-  <div class="mainhero__column max-w-[475px] flex flex-col -mt-[64px]">
+  <div
+    data-speed="1.2" class="mainhero__column max-[376px]:w-full max-sm:items-start max-sm:text-start max-lg:text-center max-lg:items-center max-sm:flex max-w-[475px] flex flex-col -mt-[64px]"
+  >
     <div
-      class="mainhero__figure absolute w-[758px] h-[550px] flex top-[150px] -left-[480px] blur-[150px] opacity-85 rounded-3xl -z-10"
+      class="mainhero__figure max-sm:bg-gradient-to-b max-sm:from-ui-backgroundFigureMob/100 max-sm:to-ui-backgroundFigure/100 max-sm:left-[inherit] max-sm:right-[50px] max-sm:opacity-100 max-sm:h-[300px] max-sm:w-[300px] max-sm:top-[180px] max-sm:rounded-full max-sm:blur-[100px] bg-gradient-to-b from-ui-backgroundFigure to-ui-backgroundFigure2 absolute w-[758px] h-[550px] flex top-[150px] -left-[480px] blur-[150px] opacity-85 rounded-3xl -z-10"
     ></div>
     <div
-      class="mainhero__figure-mob absolute w-[100px] h-[200px] flex top-[200px] right-[10px] blur-[60px] opacity-85 -z-10"
+      class="mainhero__figure-mob max-sm:bg-gradient-to-b max-sm:from-ui-backgroundFigure2/100 max-sm:to-ui-backgroundFigure2/100 max-sm:flex absolute w-[100px] h-[200px] flex top-[200px] right-[10px] blur-[60px] opacity-85 -z-10"
     ></div>
 
-    <div class="mainhero__social flex items-center gap-[18px] -ml-[3px]">
-      <a class="mainhero__inst rounded-md" href="">
+    <div class="mainhero__social  max-xl:hidden flex items-center gap-[18px] -ml-[3px]">
+      <a
+        class="mainhero__inst shadow-md shadow-ui-backgroundLanguage hover:bg-gradient-to-r hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 hover:scale-[1.3] rounded-md"
+        href=""
+      >
         <svg class="icon mainhero__icon w-6 h-6">
           <use href="#icon-insta"></use>
         </svg>
       </a>
 
-      <a class="mainhero__twit rounded-md" href="">
+      <a
+        class="mainhero__twit shadow-md shadow-ui-backgroundLanguage hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 hover:bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple hover:scale-[1.3] rounded-md"
+        href=""
+      >
         <svg class="icon w-6 h-6">
           <use href="#icon-twit"></use>
         </svg>
       </a>
-      <a class="mainhero__teleg rounded-md" href="">
+      <a
+        class="mainhero__teleg shadow-md shadow-ui-backgroundLanguage  hover:bg-gradient-to-r hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 hover:scale-[1.3] rounded-md"
+        href=""
+      >
         <svg class="icon w-6 h-6">
           <use href="#icon-teleg"></use>
         </svg>
       </a>
-      <a class="mainhero__pint rounded-md" href="">
+      <a
+        class="mainhero__pint shadow-md shadow-ui-backgroundLanguage hover:bg-gradient-to-r hover:from-ui-colorBlue/10 hover:to-ui-colorPurple/10 hover:scale-[1.3] rounded-md"
+        href=""
+      >
         <svg class="icon w-6 h-6 hover:fill-red-500">
           <use href="#icon-pint"></use>
         </svg>
       </a>
     </div>
     <h1
-      class="mainhero__title text-[64px] font-bold font-proxima mt-[27px] mb-[14px] leading-[65px]"
+      class="mainhero__title [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:mt-[54px] max-sm:max-w-[245px] max-sm:mb-[8px] max-sm:text-[36px] max-sm:leading-[40px] text-ui-primary text-[64px] font-bold font-proxima mt-[27px] mb-[14px] leading-[65px]"
       data-i18n="mainHero.title"
     ></h1>
     <p
-      class="mainhero__text text-1xl font-proxima max-w-[271px] mb-[40px] leading-[28px]"
+      class="mainhero__text [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:mb-[22px] max-sm:text-[15px] max-sm:leading-[24px] text-ui-primary text-1xl font-proxima max-w-[271px] mb-[40px] leading-[28px]"
       data-i18n="mainHero.text"
     ></p>
-    <div class="mainhero__items flex items-center gap-[12px]">
-      <div class="premium__body flex items-center rounded-2xl px-[22px] py-[18.5px] gap-2">
-        <svg class="icon mainhero__premium__icon w-6 h-6">
+    <div class="mainhero__items z-20 flex items-center gap-[12px]">
+      <div
+        class="premium__body max-sm:w-[170px] max-sm:h-[52px] max-sm:px-[16px] max-sm:rounded-[12px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple text-ui-backgroundBody flex items-center rounded-2xl px-[22px] py-[18.5px] gap-2"
+      >
+        <svg
+          class="icon mainhero__premium__icon max-xl:min-w-[18px] max-xl:min-h-[18px] max-xl:max-w-[18px] max-xl:max-h-[18px] w-6 h-6"
+        >
           <use href="#icon-crownBlack"></use>
         </svg>
         <a
           href=""
           data-i18n="mainHero.premium"
-          class="mainhero__premium-link -mt-[1px] flex items-center text-[18px] font-proxima font-bold"
+          class="mainhero__premium-link max-sm:text-[15px] max-sm:rounded-[12px] max-xl:whitespace-nowrap -mt-[1px] flex items-center text-[18px] font-proxima font-bold"
         >
         </a>
       </div>
@@ -57,55 +75,61 @@
       <a
         data-i18n="mainHero.discover"
         href=""
-        class="mainhero__discover-link -mt-[1px] font-bold text-[18px] px-[37px] py-[18.5px] rounded-2xl font-proxima"
+        class="mainhero__discover-link max-sm:w-[117px] max-sm:h-[52px] max-sm:pt-[15px] max-sm:pl-[29px] max-sm:text-[15px] max-sm:rounded-[12px] max-xl:whitespace-nowrap before:from-ui-colorBlue/10 before:to-ui-colorPurple/10 before:bg-gradient-to-r before:rounded-[16px] before:left-0 before:top-0 before:h-full before:w-full before:absolute before:content-[''] [-webkit-text-fill-color:transparent] [-webkit-background-clip:text] relative bg-gradient-to-r from-ui-colorBlue/100 to-ui-colorPurple/100 text-ui-backgroundBody -mt-[1px] font-bold text-[18px] px-[37px] py-[18.5px] rounded-2xl font-proxima"
       ></a>
     </div>
   </div>
 
-  <div class="mainhero__column relative mr-[1px] -mt-[1px]">
+  <div data-speed="1.1" class="mainhero__column max-[376px]:w-full relative mr-[1px] -mt-[1px] ">
     <div class="mainhero__background">
       <img
         loading="lazy"
         src="../../img/home/bg.webp"
         alt="home"
-        class="mainhero__background-img"
+        class="mainhero__background-img max-[360px]:min-w-[inherit] max-lg:w-[345px] max-lg:h-[306px] max-lg:min-w-[345px] max-lg:min-h-[306px]"
       />
     </div>
     <div
-      class="mainhero__hero w-[662px] h-[585px] max-h-[585px] absolute bottom-[19px] -left-[208px]"
+      class="mainhero__hero max-sm:left-0 max-sm:-top-[51px] max-lg:-top-[38px] max-lg:-left-[35px] max-lg:w-[inherit] max-xl:h-[360px] max-xl:left-[inherit] max-xl:-right-[11px] max-xl:top-[46px] w-[662px] h-[585px] max-h-[585px] absolute bottom-[19px] -left-[208px]"
     >
       <img
         loading="lazy"
         src="../../img/home/hero.webp"
         alt="hero"
-        class="mainhero__hero-img object-cover scale-[1.16]"
+        class="mainhero__hero-img max-sm:hidden max-lg:w-[345px] max-lg:h-[349px] max-lg:relative max-lg:max-w-[330px] max-lg:hidden max-xl:scale-[1.1] object-cover scale-[1.16]"
       />
       <img
         loading="lazy"
         src="../../img/home/heroMob.webp"
         alt="heromob"
-        class="mainhero__hero-img--mob"
+        class="mainhero__hero-img--mob max-[360px]:-left-[20px] max-[360px]:top-[11px] max-[360px]:min-w-[300px] max-lg:-top-[41px] max-lg:scale-[1.09] max-lg:absolute max-lg:flex hidden"
       />
     </div>
 
-    <svg class="icon__circleSmall w-[10px] h-[10px] absolute right-[4px] -top-[30px]">
+    <svg class="max-lg:hidden w-[10px] h-[10px] absolute right-[4px] -top-[30px]">
       <use href="#icon-circleSmall"></use>
     </svg>
 
-    <svg class="icon__circle w-[25px] h-[25px] absolute -left-[52px] top-[149px]">
+    <svg
+      class="icon__circle max-lg:-top-[13px] max-lg:left-[90px] w-[25px] h-[25px] absolute -left-[52px] top-[149px]"
+    >
       <use href="#icon-circle"></use>
     </svg>
 
     <img
       src="../../img/home/vector.webp"
-      class="icon mainhero__vector absolute w-[213px] h-[335px] -left-[225px] top-[205px]"
+      class="icon mainhero__vector max-[360px]:top-[80px] max-[360px]:-left-[10px] max-sm:top-[50px] max-sm:left-[14px] max-lg:top-[70px] max-lg:-left-[20px] max-lg:w-[127px] max-lg:h-[200px] absolute w-[213px] h-[335px] -left-[225px] top-[205px]"
       alt="vector"
     />
 
-    <svg class="icon__bigstars w-[46px] h-[62px] absolute -left-[77px] -top-[20px]">
+    <svg
+      class="icon__bigstars max-sm:-top-[50px] max-sm:left-[inherit] max-sm:right-[22px] max-sm:bottom-[inherit] max-sm:w-[36px] max-sm:h-[48px] max-sm:-z-10 max-lg:-top-[40px] max-lg:left-[inherit] max-lg:right-[80px] max-lg:bottom-[inherit] max-lg:w-[36px] max-lg:h-[48px] max-lg:-z-10 w-[46px] h-[62px] absolute -left-[77px] -top-[20px]"
+    >
       <use href="#icon-stars"></use>
     </svg>
-    <svg class="icon__smallstars w-[36px] h-[48px] absolute -left-[181px] bottom-[124px]">
+    <svg
+      class="icon__smallstars max-sm:-top-[43px] max-sm:-left-[14px] max-sm:bottom-[inherit] max-sm:w-[30px] max-sm:h-[41px] max-lg:-top-[30px] max-lg:-left-[30px] max-lg:bottom-[inherit] max-lg:w-[30px] max-lg:h-[41px] w-[36px] h-[48px] absolute -left-[181px] bottom-[124px]"
+    >
       <use href="#icon-stars"></use>
     </svg>
   </div>
