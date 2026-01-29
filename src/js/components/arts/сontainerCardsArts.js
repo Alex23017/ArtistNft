@@ -4,7 +4,7 @@ import CardArts from '../../../html/components/arts/CardArts.html';
 import gsap from 'gsap';
 
 export function renderOffer(dataToRender) {
-  const container = document.querySelector('.containercardsarts');
+  const container = document.querySelector('.arts__body');
 
   if (!container || !dataToRender) return;
 

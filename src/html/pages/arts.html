@@ -12,11 +12,18 @@
   <body class="">
     {{>base/Preload}}
     <div class="wrapper wrapper-arts">
-      <main class="main">
-        {{>base/Header}} {{>arts/ArtsHero}} {{>arts/ContainerCardsArts}} {{>arts/Custom}}
-        {{>arts/Unique}} {{>arts/ArtsContact}}  {{>base/Footer}}
-      </main>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          {{>base/Header}}
+          <main class="main">
+            {{>arts/ArtsHero}} {{>arts/ContainerCardsArts}} {{>arts/Custom}} {{>arts/Unique}}
+            {{>arts/ArtsContact}}
+          </main>
+          {{>base/Footer}}
+        </div>
+      </div>
     </div>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

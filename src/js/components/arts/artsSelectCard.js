@@ -24,7 +24,9 @@ async function initSelectPage() {
       background: cardArtsSelect.background,
       bigSize: cardArtsSelect.bigSize,
     });
-
+    offerCard.onclick = () => {
+      window.location.href = `payment.html?id=${cardArtsSelect.documentId}`;
+    };
     container.appendChild(offerCard);
   }
 }

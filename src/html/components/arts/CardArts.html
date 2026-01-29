@@ -1,54 +1,60 @@
-<div
-  class="card__arts max-xl:max-h-[412px] max-xl:min-w-[345px] rounded-[12px] relative cursor-pointer flex group justify-center"
->
+
   <div
-    class="card__arts-overlay pointer-events-none group-hover:animate-pulse rounded-[12px] opacity-[0] group-hover:opacity-[0.8] transition-opacity [animation-duration:1.5s] absolute inset-0 z-[90] bg-gradient-to-br from-ui-colorBlue via-ui-backgroundBiography2 to-ui-colorPurple"
-  ></div>
-  <div
-    class="card__arts-info max-lg:gap-[4px] gap-[8px] shadow-[0_0_6px_2px_#68c9ff] rounded-[12px] opacity-[0] hover:opacity-[1] transition-all ease-in-out duration-700 font-proxima flex flex-col justify-center items-center absolute z-[100] px-[40px] inset-0"
+    class="card__arts max-xl:max-h-[412px] max-xl:min-w-[345px] rounded-[12px] relative cursor-pointer flex group justify-center"
   >
-    <h3
-      class="card__arts-title max-lg:text-[20px] text-center text-[36px] text-ui-primary leading-[49.5px] font-bold top-0 left-0"
+    <div
+      class="card__arts-overlay pointer-events-none group-hover:animate-pulse rounded-[12px] opacity-[0] group-hover:opacity-[0.8] transition-opacity [animation-duration:1.5s] absolute inset-0 z-[90] bg-gradient-to-br from-ui-colorBlue via-ui-backgroundBiography2 to-ui-colorPurple"
+    ></div>
+    <div
+      class="card__arts-info max-lg:gap-[4px] gap-[8px] shadow-[0_0_6px_2px_#68c9ff] rounded-[12px] opacity-[0] hover:opacity-[1] transition-all ease-in-out duration-700 font-proxima flex flex-col justify-center items-center absolute z-[100] px-[40px] inset-0"
     >
-      {{title}}
-    </h3>
-    <p class="card__arts-text max-w-[255px] text-ui-primary text-[14px] leading-[21px] text-center">
-      {{text}}
-    </p>
-    <p
-      class="card__arts-price max-lg:text-[20px] text-[26px] leading-[33.px] text-ui-primary font-bold text-center"
-    >
-      ${{price}}
-    </p>
-    <div class="card__arts-items max-lg:mt-[5px] mt-[15px] flex items-center gap-[13px] justify-center">
-      <div
-        class="card__arts-buy max-lg:px-[15px] max-lg:py-[5px] pointer-events-auto active:scale-100 hover:bg-ui-backgroundLanguage hover:scale-110 cursor-pointer rounded-[16px] px-[45px] py-[18px] bg-ui-backgroundBody"
+      <h3
+        class="card__arts-title max-lg:text-[20px] text-center text-[36px] text-ui-primary leading-[49.5px] font-bold top-0 left-0"
       >
-        <a
-          class="card__buy-link  max-lg:text-[16px] text-[18px] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple leading-[26.5px] font-bold"
-          href=""
-          >Buy</a
+        {{title}}
+      </h3>
+      <p
+        class="card__arts-text max-w-[255px] text-ui-primary text-[14px] leading-[21px] text-center"
+      >
+        {{text}}
+      </p>
+      <p
+        class="card__arts-price max-lg:text-[20px] text-[26px] leading-[33.px] text-ui-primary font-bold text-center"
+      >
+        ${{price}}
+      </p>
+      <div
+        class="card__arts-items max-lg:mt-[5px] mt-[15px] flex items-center gap-[13px] justify-center"
+      >
+        <div
+          class="card__arts-buy max-lg:px-[15px] max-lg:py-[5px] pointer-events-auto active:scale-100 hover:bg-ui-backgroundLanguage hover:scale-110 cursor-pointer rounded-[16px] px-[45px] py-[18px] bg-ui-backgroundBody"
         >
-      </div>
-      <div
-        class="card__arts-view max-lg:px-[15px] max-lg:py-[5px] pointer-events-auto hover:bg-ui-backgroundLanguage active:scale-100 hover:scale-110 cursor-pointer rounded-[16px] pl-[39px] pr-[35px] py-[18px] bg-ui-backgroundBody"
-      >
-        <a
-          class="card__view-link  max-lg:text-[16px] -ml-[5px] flex items-center gap-[8px] text-[18px] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple leading-[26.5px] font-bold"
-          href=""
-          >View
-          <svg
-            class="icon artshero__premium__icon max-sm:w-[12px] max-sm:h-[12px] w-[12px] h-[12px]"
+          <a
+            class="card__buy-link max-lg:text-[16px] text-[18px] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple leading-[26.5px] font-bold"
+            href=""
+            >Buy</a
           >
-            <use href="#icon-arrowArts"></use>
-          </svg>
-        </a>
+        </div>
+        <div
+          class="card__arts-view max-lg:px-[15px] max-lg:py-[5px] pointer-events-auto hover:bg-ui-backgroundLanguage active:scale-100 hover:scale-110 cursor-pointer rounded-[16px] pl-[39px] pr-[35px] py-[18px] bg-ui-backgroundBody"
+        >
+          <a
+            class="card__view-link max-lg:text-[16px] -ml-[5px] flex items-center gap-[8px] text-[18px] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple leading-[26.5px] font-bold"
+            href=""
+            >View
+            <svg
+              class="icon artshero__premium__icon max-sm:w-[12px] max-sm:h-[12px] w-[12px] h-[12px]"
+            >
+              <use href="#icon-arrowArts"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
+    <img
+      src="{{img}}"
+      alt="imgCard"
+      class="card__img w-full max-w-[351px] h-[420px] object-cover rounded-[12px] max-xl:h-[412px]"
+    />
   </div>
-  <img
-    src="{{img}}"
-    alt="imgCard"
-    class="card__img w-full max-w-[351px] h-[420px] object-cover rounded-[12px] max-xl:h-[412px]"
-  />
-</div>
+

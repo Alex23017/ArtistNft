@@ -3,25 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auction</title>
+    <title>Payment</title>
     <meta name="description" content="{{page.description}}" />
     <link rel="icon" href="./img/header/favicon.png" type="png" />
-    <!-- <link rel="preload" as="image" href="./img/header/heroSlider.webp" /> -->
     <link rel="preconnect" href="https://your-strapi.cloud" crossorigin />
   </head>
-  <body class="">
-    {{>base/Preload}}
-    <div class="wrapper wrapper-auction">
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          {{>base/Header}}
-          <main class="main h-full">
-            {{>base/Navigate}} {{>auction/HeroAuc}} {{>auction/AboutWork}}
-          </main>
-          {{>base/Footer}}
-        </div>
+  <body class="min-h-full">
+    <div id="smooth-wrapper">
+      <div id="smooth-content" class="wrapper-payment min-h-screen flex flex-col">
+        {{>base/Header}}
+
+        <main class="main flex-1">{{>payment/PaymentCard}}</main>
+
+        {{>base/Footer}}
       </div>
     </div>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

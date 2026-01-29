@@ -12,8 +12,12 @@
   <body>
     {{>base/Preload}}
     <div class="wrapper wrapper-home">
-      <main class="main ">
-        {{>home/MakeArt}} {{>home/NotWar}} {{>home/HomeNftSwiper}} {{>base/Footer}}
+      <main class="main">
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            {{>home/MakeArt}} {{>home/NotWar}} {{>home/HomeNftSwiper}} {{>base/Footer}}
+          </div>
+        </div>
       </main>
     </div>
     <script type="module" src="./js/main.js"></script>

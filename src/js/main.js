@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   if (window.innerWidth > 1024) {
     ScrollSmoother.create({
-      content: '.main',
+      wrapper: '#smooth-wrapper', 
+      content: '#smooth-content', 
       smooth: 2.5,
       effects: true,
     });
@@ -100,5 +101,5 @@ function currentPage(page, lastPage = '', nextPage = '', arrowLast = '', arrowCu
   }
 }
 
-currentPage('auction', '', 'Auction', svgLast,);
+currentPage('auction', '', 'Auction', svgLast);
 currentPage('selectArts', 'html/pages/NFT', 'Name of product', svgLast, svgNext);
