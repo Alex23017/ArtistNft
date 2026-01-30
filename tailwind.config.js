@@ -44,6 +44,8 @@ export default {
           backgroundPremiumPurple: '#8c45ff',
           backgroundCardHomeNft: '#212426',
           backgroundFigureMobArts: '#1300e8',
+          backgroundPricingBlue: '#00ADC5',
+          backgroundPricingPurple: '#AD7AFF',
         },
       },
     },

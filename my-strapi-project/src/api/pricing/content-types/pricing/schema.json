@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricings",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "caption": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "duration": {
+      "type": "string"
+    },
+    "textOne": {
+      "type": "string"
+    },
+    "textTwo": {
+      "type": "string"
+    },
+    "textThree": {
+      "type": "string"
+    },
+    "textFour": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

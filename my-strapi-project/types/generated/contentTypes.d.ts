@@ -623,6 +623,36 @@ export interface ApiHomeNftHomeNft extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPricingPricing extends Struct.CollectionTypeSchema {
+  collectionName: 'pricings';
+  info: {
+    displayName: 'Pricing';
+    pluralName: 'pricings';
+    singularName: 'pricing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    caption: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    duration: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::pricing.pricing'> &
+      Schema.Attribute.Private;
+    price: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    textFour: Schema.Attribute.String;
+    textOne: Schema.Attribute.String;
+    textThree: Schema.Attribute.String;
+    textTwo: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+  };
+}
+
 export interface ApiQuestionQuestion extends Struct.CollectionTypeSchema {
   collectionName: 'questions';
   info: {
@@ -1083,6 +1113,7 @@ declare module '@strapi/strapi' {
       'api::comment.comment': ApiCommentComment;
       'api::global.global': ApiGlobalGlobal;
       'api::home-nft.home-nft': ApiHomeNftHomeNft;
+      'api::pricing.pricing': ApiPricingPricing;
       'api::question.question': ApiQuestionQuestion;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
