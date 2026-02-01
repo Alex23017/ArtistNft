@@ -642,6 +642,7 @@ export interface ApiPricingPricing extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::pricing.pricing'> &
       Schema.Attribute.Private;
+    number: Schema.Attribute.Integer;
     price: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     textFour: Schema.Attribute.String;

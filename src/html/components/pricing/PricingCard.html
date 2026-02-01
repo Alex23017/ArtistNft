@@ -1,1 +1,85 @@
-<div class="pricing-slide swiper-slide text-ui-primary"></div>
+<div
+  class="pricing-slide swiper-slide  max-lg:place-items-center max-lg:max-w-full max-xl:max-w-[450px] max-w-[350px] group transform"
+>
+  <div
+    class="pricing__card max-[365px]:max-w-[280px] max-[365px]:min-w-[inherit] max-sm:min-w-[345px] max-sm:group-[&.swiper-slide-active]:-translate-y-[72px] group-[&.swiper-slide-next]:mt-[36px] group-[&.swiper-slide-prev]:mt-[36px] group-[&.swiper-slide-active]:mt-[42px] group-[&.swiper-slide-active]:before:inset-[-5px] group-[&.swiper-slide-active]:before:rounded-[16px] group-[&.swiper-slide-active]:before:-z-10 relative group-[&.swiper-slide-active]:before:bg-gradient-to-r group-[&.swiper-slide-active]:before:from-ui-backgroundPricingBlue group-[&.swiper-slide-active]:before:to-ui-backgroundPricingPurple group-[&.swiper-slide-active]:before:absolute group-[&.swiper-slide-active]:before:content-[''] bg-ui-backgroundLanguage transform duration-700 group-[&.swiper-slide-active]:-translate-y-[46px] rounded-[12px] max-w-[350px] font-proxima pb-[18px]"
+  >
+    <div
+      class="pricing__header max-sm:rounded-t-[12px] rounded-t-[16px] bg-ui-backgroundLanguage relative"
+    >
+      <p
+        class="pricing__header-caption max-sm:left-[50.5%] max-sm:top-[2px] whitespace-nowrap top-[0px] left-1/2 -translate-x-1/2 font-bold text-[80px] text-transparent opacity-20 [-webkit-text-stroke:1px_white] font-proxima absolute"
+      >
+        {{caption}}
+      </p>
+      <img
+        class="pricing__header-img max-sm:pl-[26px] max-sm:pt-[26px] relative group-[&.swiper-slide-active]:animate-pulse duration-700 transform z-10 pt-[24px] pl-[28px]"
+        src="{{img}}"
+        alt="crystalWeek"
+      />
+      <div
+        class="crystal__brightness flex absolute blur-[30px] left-[30px] top-[75px] w-[110px] h-[80px] bg-ui-backgroundBiography2"
+      ></div>
+      <div
+        class="pricing__duration max-sm:-right-[4px] pl-[26px] pr-[15px] absolute z-10 -bottom-[41px] right-[0px] h-[80px] w-[275px] py-[14px] text-ui-backgroundLanguage bg-gradient-to-r from-ui-backgroundPricingBlue to-ui-colorPurple rounded-bl-[8px] rounded-tl-[8px]"
+      >
+        <p
+          class="pricing__duration-time group-[&.swiper-slide-active]:text-ui-primary font-bold text-[26px] leading-[33.5px]"
+        >
+          {{duration}}
+        </p>
+        <p
+          class="pricing__duration-caption -mt-[3px] text-[14px] leading-[21px] group-[&.swiper-slide-active]:text-ui-primary"
+        >
+          Purchasing this access you get
+        </p>
+      </div>
+    </div>
+    <div
+      class="pricing__info max-sm:pl-[27px] max-sm:rounded-b-[12px] [&>*:not(:last-child)]:relative [&>*:not(:last-child)]:before:left-0 [&>*:not(:last-child)]:before:-bottom-[10px] [&>*:not(:last-child)]:before:content-[''] [&>*:not(:last-child)]:before:w-full [&>*:not(:last-child)]:before:h-[1px] [&>*:not(:last-child)]:before:bg-ui-secondary/50 [&>*:not(:last-child)]:before:absolute n pb-[30px] rounded-b-[16px] bg-ui-backgroundLanguage pt-[68px] flex flex-col gap-[20px] pl-[28px] pr-[30px] text-[14px] leading-[21px] text-ui-secondary"
+    >
+      <div class="pricing__info-one flex items-center gap-[16px]">
+        <svg class="icon pricing__crystal min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px]">
+          <use href="#icon-crystal"></use>
+        </svg>
+        <p class="pricing__info-text max-w-[235px]">{{textOne}}</p>
+      </div>
+      <div class="pricing__info-two flex items-center gap-[16px]">
+        <svg class="icon pricing__crystal min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px]">
+          <use href="#icon-crystal"></use>
+        </svg>
+        <p class="pricing__info-text max-w-[235px]">{{textTwo}}</p>
+      </div>
+      <div class="pricing__info-three flex items-center gap-[16px]">
+        <svg class="icon pricing__crystal min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px]">
+          <use href="#icon-crystal"></use>
+        </svg>
+        <p class="pricing__info-text max-w-[235px]">{{textThree}}</p>
+      </div>
+      <div class="pricing__info-four flex items-center gap-[16px]">
+        <svg class="icon pricing__crystal min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px]">
+          <use href="#icon-crystal"></use>
+        </svg>
+        <p class="pricing__info-text max-w-[235px]">{{textFour}}</p>
+      </div>
+    </div>
+    <div
+      class="pricing__footer max-[365px]:gap-[10px] pr-[7px] group-[&.swiper-slide-active]:bg-transparent bg-ui-backgroundLanguage pt-[15px] flex justify-center items-center gap-[23px]"
+    >
+      <div
+        class="pricing__items pricing__footer-button group-[&.swiper-slide-active]:bg-gradient-to-r group-[&.swiper-slide-active]:from-ui-backgroundLanguage group-[&.swiper-slide-active]:to-ui-backgroundLanguage font-bold py-[15px] px-[51px] text-[18px] leading-[26.5px] rounded-[12px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple"
+      >
+        <button
+          type="button"
+          class="text-ui-backgroundLanguage group-[&.swiper-slide-active]:[-webkit-background-clip:text] group-[&.swiper-slide-active]:[-webkit-text-fill-color:transparent] group-[&.swiper-slide-active]:bg-gradient-to-r group-[&.swiper-slide-active]:from-ui-colorBlue group-[&.swiper-slide-active]:to-ui-colorPurple"
+        >
+          Purchase
+        </button>
+      </div>
+
+      <p class="pricing__footer-price text-ui-primary text-[22px] leading-[33.5px] font-bold">
+        {{price}}
+      </p>
+    </div>
+  </div>
+</div>

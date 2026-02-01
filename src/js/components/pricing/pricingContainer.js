@@ -6,8 +6,9 @@ import { getPricing } from '../../api/service/pricing.js';
 
 async function sliderInit() {
   const slider = document.querySelector('.mySwiperPricing');
-  if (!slider) return;
 
+  if (!slider) return;
+  const tabs = document.querySelectorAll('#pricingTabs .tab');
   const [{ default: Swiper }, { Navigation, Pagination }] = await Promise.all([
     import('swiper'),
     import('swiper/modules'),
@@ -16,11 +17,12 @@ async function sliderInit() {
   await import('swiper/css');
   await import('swiper/css/pagination');
 
-  new Swiper(slider, {
+  const swiper = new Swiper(slider, {
     modules: [Navigation, Pagination],
     loop: true,
     centeredSlides: true,
     spaceBetween: 32,
+
     speed: 600,
     slidesOffsetBefore: 0,
     slidesOffsetAfter: 0,
@@ -30,16 +32,24 @@ async function sliderInit() {
       nextEl: '.swiper__pricing-next',
       prevEl: '.swiper__pricing-prev',
     },
+    on: {
+      slideChange(swiper) {
+        tabs.forEach((tab, i) => {
+          tab.classList.toggle('active', i === swiper.realIndex);
+        });
+      },
+    },
 
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     breakpoints: {
-      370: {
+      320: {
         slidesPerView: 1,
         watchSlidesProgress: true,
-        spaceBetween: 5,
+        spaceBetween: 15,
+        centeredSlides: false,
       },
       900: {
         slidesPerView: 2,
@@ -52,6 +62,11 @@ async function sliderInit() {
         spaceBetween: 32,
       },
     },
+  });
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      swiper.slideToLoop(index);
+    });
   });
 }
 
@@ -71,6 +86,7 @@ export function renderOffer(dataToRender) {
       textThree: item.textThree,
       textFour: item.textFour,
       price: item.price,
+      number: item.number,
     });
 
     // offerCard.onclick = () => {
@@ -91,5 +107,5 @@ export function renderOffer(dataToRender) {
 // }
 const data = await getPricing();
 console.log('data: ', data);
+renderOffer(data);
 sliderInit();
-// renderOffer(data);
