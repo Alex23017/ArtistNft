@@ -1,0 +1,96 @@
+<div
+  class="contacts__hero max-sm:overflow-hidden relative max-sm:gap-[20px] max-lg:px-[15px] max-xl:px-[50px] max-lg:gap-[50px] max-xl:flex-col max-xl:items-center max-xl:gap-[50px] flex gap-[99px] justify-center pl-[165px] pr-[20px] mt-[31px]"
+  data-component="contactsHero"
+>
+  {{>contacts/ComePart}} {{>contacts/Our}}
+
+  <div
+    class="contacts__figure max-sm:top-[180px] max-sm:h-[250px] max-[400px]:w-[100px] max-[400px]:left-[inherit] max-[400px]:right-0 max-[400px]:blur-[60px] max-[400px]:rounded-[inherit] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundPremiumPurple bg-gradient-to-b from-ui-backgroundFigure to-ui-backgroundFigure2 top-[360px] h-[380px] absolute w-[758px] flex -left-[480px] blur-[150px] opacity-85 rounded-3xl -z-10"
+  ></div>
+  <div
+    class="contacts__decor-mob--second max-sm:-z-[9] max-[400px]:flex max-[400px]:w-[300px] max-sm:h-[300px] max-sm:top-[200px] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundFigureMob max-[400px]:blur-[90px] top-[200px] -z-[10] bg-gradient-to-b from-ui-backgroundFigure/60 to-ui-backgroundFigure2/40 flex-none w-[250px] h-[500px] absolute left-0 blur-[140px]"
+  ></div>
+  <div
+    data-speed="1"
+    class="contacts__column contacts__column-title max-[400px]:justify-start max-[400px]:items-start max-sm:justify-center max-sm:items-center max-sm:mt-[28px] max-sm:w-full max-w-[540px] flex flex-col mt-[76px]"
+  >
+    <div
+      class="contacts__figure-mob max-[400px]:w-[250px] max-[400px]:top-[250px] max-[400px]:h-[400px] max-[400px]:right-[20px] max-[400px]:bg-gradient-to-r max-[400px]:from-ui-backgroundFigure2/40 max-[400px]:to-ui-backgroundFigure2/80 absolute w-[100px] h-[200px] flex top-[200px] right-[10px] blur-[60px] opacity-85 -z-10"
+    ></div>
+
+    <h1
+      class="contacts__title max-sm:text-start max-lg:text-center [text-shadow:5px_8px_10px_rgba(0,0,0,0.5)] max-sm:text-pretty max-sm:max-w-[320px] max-sm:mb-[8px] max-sm:text-[36px] max-sm:leading-[40px] text-ui-primary text-[64px] font-bold font-proxima mt-[19px] leading-[65px] max-w-[510px] text-balance"
+      data-i18n="contactsHero.title"
+      data-speed="1.1"
+    ></h1>
+    <p
+      class="contacts__text -mt-[1px] max-sm:px-[inherit] max-sm:mt-[0px] max-lg:px-[50px] max-lg:mt-[20px] max-sm:mb-[32px] max-sm:text-[15px] max-sm:leading-[24px] text-ui-primary text-1xl font-proxima mb-[25px] leading-[28px]"
+      data-i18n="contactsHero.text"
+      data-speed="1.1"
+    ></p>
+    <div class="contacts__items  max-lg:justify-center flex items-center gap-[12px]" data-speed="1.1">
+      <div
+        class="contacts__premium-body max-sm:py-[13.2px] max-sm:pl-[28px] max-sm:pr-[29px] max-sm:rounded-[12px] premium__body bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple flex items-center rounded-2xl px-[22px] py-[18.5px] gap-2"
+      >
+        <svg class="icon contacts__premium__icon max-sm:w-[18px] max-sm:h-[18px] w-6 h-6">
+          <use href="#icon-bagArts"></use>
+        </svg>
+        <a
+          href=""
+          data-i18n="contactsHero.button"
+          class="contacts__premium-link relative !z-20 max-sm:text-[15px] max-sm:leading-[26.5px] text-ui-backgroundBody -mt-[1px] flex items-center text-[18px] font-proxima font-bold"
+        >
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div
+    data-speed="1"
+    class="contacts__column contacts__column-img max-sm:mr-[3px] max-sm:mt-[34px] mt-[30px] max-[400px]:h-[340px] 2xl:max-w-[600px] w-full h-[500px]"
+  >
+    <div
+      class="contacts__body max-sm:left-[10px] max-xl:flex max-xl:justify-center max-xl:items-center relative right-[0px]"
+    >
+      <img
+        loading="lazy"
+        src="/img/contacts/bg.webp"
+        alt="bg"
+        class="contacts__background-img max-sm:min-w-[369px] max-sm:hidden absolute -z-10"
+      />
+      <img
+        loading="lazy"
+        src="/img/contacts/bgMob.webp"
+        alt="bgMob"
+        class="contacts__background-img--mob w-[330px] max-sm:flex hidden absolute top-0"
+      />
+
+      <img
+        loading="lazy"
+        src="/img/contacts/Hero.webp"
+        alt="hero"
+        class="contacts__hero-img max-sm:mt-[2px] max-sm:-left-[42px] max-[340px]:left-[1.5%] max-sm:max-w-[279px] max-sm:min-w-[279px] max-lg:left-[0px] max-lg:top-[24px] max-lg:rounded-[22px] max-lg:relative max-xl:static max-xl:top-0 z-[99] object-cover absolute -left-[24px] top-[40px]"
+      />
+
+      <svg
+        class="arts__circle animate-ping hover:animate-none  cursor-pointer  max-sm:-top-[154px] max-sm:left-[82px] w-[25px] h-[25px] absolute -left-[175px] top-[423px]"
+        data-speed="1.1"
+      >
+        <use href="#icon-circle"></use>
+      </svg>
+
+      <svg
+        class="arts__bigstars max-sm:w-[30px] max-sm:h-[41px] max-sm:-left-[23px] max-sm:rotate-[inherit] max-sm:-top-[184px] w-[46px] h-[62px] absolute -left-[116px] rotate-[11deg] top-[375px] animate-pulse"
+        data-speed="1.2"
+      >
+        <use href="#icon-stars"></use>
+      </svg>
+      <svg
+        class="contacts__smallstar max-sm:right-[30px] max-sm:-top-[191px] max-sm:rotate-0 animate-pulse w-[36px] h-[48px] absolute right-[92px] top-[190px] rotate-[-17deg]"
+        data-speed="1"
+      >
+        <use href="#icon-stars"></use>
+      </svg>
+    </div>
+  </div>
+</div>

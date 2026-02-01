@@ -59,7 +59,7 @@
       "button": "Get custom now"
     }
   },
-    "ArtsContact": {
+  "ArtsContact": {
     "caption": "CUSTOM BY YOUR OWN",
     "title": "Want to get your own?",
     "labelType": "Type of item",
@@ -69,5 +69,12 @@
     "inputComment": "Comment",
     "checkbox": "Send message",
     "privacy": "I agree with<span class='max-[400px]:mr-[7px] font-semibold mr-[9px] ml-[8px] -tracking-[0.1] max-[400px]:m-0 underline text-ui-backgroundFigure2'>Privacy Policy</span>and<span class='font-semibold mr-[9px] ml-[8px] -tracking-[0.1] max-[400px]:ml-[7px] underline text-ui-backgroundFigure2'>Terms of use</span>"
+  },
+  "contactsHero": {
+ 
+      "title": "Want to be a part of our team?",
+      "text": "no purse as fully me or point. Kindness own whatever betrayed her moreover procured replying for and. Proposal indulged no do do sociable he throwing settling. Covered ten nor comfort offices carried. Age she way earnestly the fulfilled extremely. Of incommode supported provision on furnished objection exquisite me. Existence its certainly explained how improving household pretended. Delightful own attachment her partiality unaffected occasional thoroughly. Adieus it no wonder spirit houses.",
+      "button": "Get custom now"
+    
   }
 }
