@@ -19,3 +19,4 @@ updateActive('arts', '.nav__items-arts');
 updateActive('index', '.nav__items-main');
 updateActive('pricing', '.nav__items-pricing');
 updateActive('contacts', '.nav__items-contacts');
+updateActive('blog', '.nav__items-blog');

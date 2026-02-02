@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SelectArts</title>
+    <title>Blog</title>
     <meta name="description" content="{{page.description}}" />
     <link rel="icon" href="./img/header/favicon.png" type="png" />
     <!-- <link rel="preload" as="image" href="./img/header/heroSlider.webp" /> -->
@@ -11,11 +11,12 @@
   </head>
   <body class="">
     {{>base/Preload}}
-    <div class="wrapper wrapper-pricing">
+    <div class="wrapper wrapper-contacts">
       {{>base/Header}}
-      <main class="main-pricing">{{>pricing/PricingContainer}}</main>
+      <main class="main flex-1">{{>blog/CardsBlog}}{{>blog/ContainerBlog}}</main>
       {{>base/Footer}}
     </div>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
