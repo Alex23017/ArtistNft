@@ -9,12 +9,16 @@
     <!-- <link rel="preload" as="image" href="./img/header/heroSlider.webp" /> -->
     <link rel="preconnect" href="https://your-strapi.cloud" crossorigin />
   </head>
-  <body class="">
+  <body>
     {{>base/Preload}}
-    <div class="wrapper wrapper-contacts">
-      {{>base/Header}}
-      <main class="main flex-1">{{>blog/CardsBlog}}{{>blog/ContainerBlog}}</main>
-      {{>base/Footer}}
+    <div class="wrapper wrapper-blog">
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          {{>base/Header}}
+          <main class="main flex-1">{{>blog/HeaderBlog}}{{>blog/ContainerBlog}}</main>
+          {{>base/Footer}}
+        </div>
+      </div>
     </div>
 
     <script type="module" src="/js/main.js"></script>

@@ -12,9 +12,13 @@
   <body class="">
     {{>base/Preload}}
     <div class="wrapper wrapper-pricing">
-      {{>base/Header}}
-      <main class="main-pricing">{{>pricing/PricingContainer}}</main>
-      {{>base/Footer}}
+      <div id="smooth-wrapper">
+        <div id="smooth-content" class="wrapper-payment min-h-screen flex flex-col">
+          {{>base/Header}}
+          <main class="main-pricing flex-1">{{>pricing/PricingContainer}}</main>
+          {{>base/Footer}}
+        </div>
+      </div>
     </div>
     <script type="module" src="/js/main.js"></script>
   </body>

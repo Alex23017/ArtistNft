@@ -1,0 +1,45 @@
+<div class="cardblog-slide swiper-slide">
+  <div
+    class="cardblog-card pb-[22px] bg-ui-backgroundLanguage rounded-[12px] max-w-[350px] max-h-[350px]"
+  >
+    <img src="{{background}}" alt="bg" class="cardblog__card-backgroung rounded-t-[12px]" />
+    <div class="cardblog__user px-[21px] flex items-center justify-between">
+      <img src="{{img}}" alt="avatar" class="cardblog__user-avatar -mt-[45px]" />
+      <p
+        class="cardblog__user-data mt-[8px] text-ui-secondary font-manrope text-[14px] leading-[19px]"
+      >
+        {{date}}
+      </p>
+    </div>
+    <p
+      class="cardblog__user-name -tracking-[0.3px] pl-[28px] pr-[15px] mt-[14px] font-manrope text-[14px] leading-[19px] text-ui-secondary"
+    >
+      {{name}}
+    </p>
+    <h3
+      class="cardblog__user-question truncate -mt-[1px] pl-[28px] pr-[15px] font-bold font-proxima text-[20px] leading-[30px] text-ui-primary"
+    >
+      {{questionTitle}}
+    </h3>
+    <div class="cardblog__items mt-[5px] pl-[28px] pr-[73px] flex items-center justify-between gap-[10px]">
+      <div
+        class="cardblog__item-view whitespace-nowrap active:scale-100 hover:scale-110 bg-ui-secondary/10 rounded-[10px]"
+      >
+        <p
+          class="cardblog__item-view cursor-pointer py-[10px] pl-[21px] pr-[15px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] font-bold text-[14px] leading-[20px] font-proxima"
+        >
+          View answers (23)
+        </p>
+      </div>
+
+      <div
+        class="cardblog__item-answer cursor-pointer active:scale-100 hover:scale-110 flex items-center gap-[8px]"
+      >
+        <svg class="icon blog__answer w-[20px] h-[20px]">
+          <use href="#icon-bloganswer"></use>
+        </svg>
+        <p class="font-proxima text-[14px] leading-[20px] font-bold text-[#C5FF98]">Answer</p>
+      </div>
+    </div>
+  </div>
+</div>

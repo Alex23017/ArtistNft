@@ -528,6 +528,34 @@ export interface ApiCommentComment extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiForumForum extends Struct.CollectionTypeSchema {
+  collectionName: 'forums';
+  info: {
+    displayName: 'blog';
+    pluralName: 'forums';
+    singularName: 'forum';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    background: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    date: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::forum.forum'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    questionText: Schema.Attribute.String;
+    questionTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -1112,6 +1140,7 @@ declare module '@strapi/strapi' {
       'api::arts-card.arts-card': ApiArtsCardArtsCard;
       'api::author.author': ApiAuthorAuthor;
       'api::comment.comment': ApiCommentComment;
+      'api::forum.forum': ApiForumForum;
       'api::global.global': ApiGlobalGlobal;
       'api::home-nft.home-nft': ApiHomeNftHomeNft;
       'api::pricing.pricing': ApiPricingPricing;

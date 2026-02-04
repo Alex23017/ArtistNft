@@ -46,6 +46,7 @@ export default {
           backgroundFigureMobArts: '#1300e8',
           backgroundPricingBlue: '#00ADC5',
           backgroundPricingPurple: '#AD7AFF',
+          backgroundBlogInput: '#2C2F33',
         },
       },
     },

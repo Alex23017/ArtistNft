@@ -1,0 +1,109 @@
+<div
+  class="forum__question pb-[30px] pt-[18px] mt-[16px] pl-[22px] pr-[39px] bg-ui-backgroundLanguage rounded-[12px] h-auto"
+>
+  <div class="forum__question-header flex items-center justify-between">
+    <div class="question__user flex items-center gap-[16px] mt-[0px]">
+      <div class="question__navigate">
+        <svg
+          class="icon blog__navigate-top active:scale-100 hover:scale-[1.1] text-ui-primary/10 transition-all ease-in-out duration-300 hover:text-ui-backgroundFigure2 rotate-[180deg] w-[16px] h-[20px] cursor-pointer"
+        >
+          <use href="#icon-arrowBlog"></use>
+        </svg>
+        <p
+          class="question__navigate-count mt-[2px] text-center text-[14px] leading-[19px] font-manrope text-ui-secondary"
+        >
+          {{countQuestion}}
+        </p>
+        <svg
+          class="icon blog__navigate-down mt-[4px] active:scale-100 hover:scale-[1.1] text-ui-primary/10 transition-all ease-in-out duration-300 hover:text-ui-backgroundFigure2 w-[16px] h-[20px] cursor-pointer"
+        >
+          <use href="#icon-arrowBlog"></use>
+        </svg>
+      </div>
+      <img src="/img/blog/avatar.webp" alt="user" class="question__user-img w-[40px] h-[40px]" />
+      <div>
+        <p
+          class="question__user-name mt-[6px] font-manrope text-[14px] leading-[19px] text-ui-secondary"
+        >
+          {{name}}
+        </p>
+        <p
+          class="question__user-question text-[20px] leading-[30px] text-ui-primary font-proxima font-bold"
+        >
+          {{questionTitle}}
+        </p>
+      </div>
+    </div>
+    <div
+      class="question__data -mt-[4px] ml-[0px] text-ui-secondary text-[14px] leading-[19px] font-manrope"
+    >
+      {{date}}
+    </div>
+  </div>
+  <div
+    class="question__text mt-[7px] pl-[89px] pr-[30px] text-[16px] leading-[28px] text-ui-primary font-proxima"
+  >
+    <p class="question__text-text">{{questionText}}</p>
+    <div
+      class="open__views relative before:-left-[16px] before:absolute before:content-[''] before:bg-ui-secondary/20 before:h-[95%] before:w-[1px] mb-[31px] ml-[16px] hidden [&.open]:flex flex-col mt-[16px]"
+    >
+      <p class="views__user-name text-ui-secondary text-[14px] leading-[19px] font-manrope">
+        {{name}}
+      </p>
+      <p
+        class="views__user-text ml-[2px] mt-[6px] text-ui-primary text-[16px] leading-[28px] font-proxima"
+      >
+        no purse as fully me or point. Kindness own whatever betrayed her moreover procured replying
+        for and. Proposal indulged no do do sociable he throwing settling.
+      </p>
+    </div>
+
+    <div
+      class="question__items whitespace-nowrap cursor-pointer mt-[16px] flex items-center justify-start gap-[21px]"
+    >
+      <div class="question__item-view bg-ui-secondary/10 rounded-[10px]">
+        <p
+          data-text="View answers (23)"
+          class="question__item-view py-[10px] pl-[21px] pr-[15px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] font-bold text-[14px] leading-[20px] font-proxima"
+        >
+          View answers (23)
+        </p>
+      </div>
+
+      <div
+        class="question__item-answer flex whitespace-nowrap cursor-pointerflex items-center gap-[8px]"
+      >
+        <svg class="icon blog__answer w-[20px] h-[20px]">
+          <use href="#icon-bloganswer"></use>
+        </svg>
+        <p class="font-proxima text-[14px] leading-[20px] font-bold text-[#C5FF98]">Answer</p>
+      </div>
+    </div>
+    <div class="open__answers pb-[35px] hidden [&.open]:flex items-center w-full">
+      <div class="name__answer mt-[16px] flex flex-col h-[64px]">
+        <label for="nameAnswer" class="text-[14px] mb-[7px] leading-[21px] text-ui-secondary"
+          >Your answer</label
+        >
+        <div
+          class="flex w-[581px] rounded-[9px] items-center bg-ui-backgroundBlogInput justify-between"
+        >
+          <input
+            class="text-[16px] bg-ui-backgroundBlogInput flex-1 text-ui-primary mt-[0px] py-[21.5px] rounded-[9px] leading-[21px] pl-[32px]"
+            type="text"
+            id="nameBlog"
+            placeholder="Your name"
+          />
+          <div
+            class="bg-ui-secondary/10 cursor-pointer hover:scale-110 active:scale-100 rounded-[12px] mr-[9px]"
+          >
+            <p
+              class="search__button py-[14px] px-[28px] cursor-pointer font-bold font-proxima text-[14px] leading-[20px] bg-gradient-to-r from-ui-colorBlue to-ui-colorPurple [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]"
+            >
+              Send
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
